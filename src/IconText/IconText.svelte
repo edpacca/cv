@@ -25,5 +25,6 @@
         grid-template-columns: 1.4em 1fr;
         column-gap: 0.2em;
         align-items: center;
+        font-weight: 300;
     }
 </style>

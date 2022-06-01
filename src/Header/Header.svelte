@@ -1,5 +1,5 @@
 <script>
-import IconText from "./IconText/IconText.svelte";
+import IconText from "../IconText/IconText.svelte";
 </script>
 
 <div class="top">

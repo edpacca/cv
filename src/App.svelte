@@ -36,7 +36,7 @@ import Skills from "./Skills/Skills.svelte";
 
 	.content-grid {
 		display: grid;
-		grid-template-columns: 75% 1fr;
+		grid-template-columns: 70% 1fr;
 	}
 
 </style>
