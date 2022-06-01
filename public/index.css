@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'system-ui';
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(50, 50, 50);
+}
+
+.page {
+  width: 210mm;
+  height: 270mm;
+  border: 1px solid black;
+  filter: drop-shadow(9px);
+  background-color: white;
+  margin: auto;
+}
+
+.page-body {
+  padding: 1em;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 9fr 2fr;
+}
+
+.portfolio-info {
+  display: grid;
+  grid-template-columns: 1.4em 1fr;
+  align-items: center;
+  font-weight: 600;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1.4em 1fr 1.4em 1fr 1.4em 1fr;
+  align-items: center;
+  font-weight: 600;
+}
+
+.title1 {
+  font-size: 2em;
+  font-weight: 130;
+}
+
+.title2 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.header > .title2 {
+  margin-top: -0.3em;
+}
+
+.icon {
+  width: 1.2em;
+}
