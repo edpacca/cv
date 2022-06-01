@@ -1,7 +1,7 @@
 <script lang="ts">
-import Experience from "./Experience.svelte";
-import Header from "./Header.svelte";
-import Skills from "./Skills.svelte";
+import Experience from "./Experience/Experience.svelte";
+import Header from "./Header/Header.svelte";
+import Skills from "./Skills/Skills.svelte";
 </script>
 
 <main>
