@@ -1,4 +1,5 @@
 <script lang="ts">
+import Education from "./Education/Education.svelte";
 import Experience from "./Experience/Experience.svelte";
 import Header from "./Header/Header.svelte";
 import Skills from "./Skills/Skills.svelte";
@@ -11,7 +12,10 @@ import Skills from "./Skills/Skills.svelte";
 			</div>
 			<div class="content-grid">
 				<Experience />
-				<Skills />
+				<div class="right-col">
+					<Skills />
+					<Education />
+				</div>
 			</div>
 		</div>
 </main>
@@ -24,10 +28,11 @@ import Skills from "./Skills/Skills.svelte";
 		filter: drop-shadow(9px);
 		background-color: white;
 		margin: auto;
+		margin-top: 3em;
 	}
 
 	.page-body {
-		padding: 1em;
+		padding: 1.5em;
 	}
 
 	.header {
@@ -36,7 +41,12 @@ import Skills from "./Skills/Skills.svelte";
 
 	.content-grid {
 		display: grid;
-		grid-template-columns: 70% 1fr;
+		grid-template-columns: 65% 1fr;
+	}
+
+	.right-col {
+		border-left: 1px solid black;
+		padding-left: 1em;	
 	}
 
 </style>
