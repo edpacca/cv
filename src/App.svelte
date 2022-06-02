@@ -45,7 +45,7 @@ import Skills from "./Skills/Skills.svelte";
 	}
 
 	.right-col {
-		border-left: 1px solid black;
+		border-left: 1px solid rgb(88, 104, 104);
 		padding-left: 1em;	
 	}
 

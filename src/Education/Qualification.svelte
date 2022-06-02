@@ -6,14 +6,14 @@
 <div class="qualification-wrapper">
     <div class="qualification-header">
         <div>
-            <div class="qualification">{qualification.qualification}</div>
+            <div class="title4 grey">{qualification.qualification}</div>
             {#if qualification.grade}
                 <span class="grade">{qualification.grade}</span>
             {/if}
         </div>
         <div class="right-align">
-            <div class="institute">{qualification.institute}</div>
-            <div class="dates">{qualification.dates}</div>
+            <div class="institute grey">{qualification.institute}</div>
+            <div class="dates green float-right">{qualification.dates}</div>
         </div>
 
     </div>
@@ -34,10 +34,6 @@
         display: flex;
     }
 
-    .qualification {
-        font-weight: 600;
-    }
-
     .grade {
         position: absolute;
         overflow: auto;
@@ -51,11 +47,6 @@
 
     .institute {
         font-style: italic;
-        float: right;
-    }
-    .dates {
-        font-size: 0.75em;
-        font-weight: bold;
         float: right;
     }
 

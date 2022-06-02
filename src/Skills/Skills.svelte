@@ -4,7 +4,7 @@ import { js, java, csharp, nosql, tools, security, familiar } from './data';
 </script>
 
 <div class="skills-wrapper">
-    <div class="title3">Technologies</div>
+    <div class="title3 green">Technologies</div>
     <hr class="hr-thick">
     <Skill skill={js}/>
     <Skill skill={java}/>

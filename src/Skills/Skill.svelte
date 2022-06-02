@@ -4,7 +4,7 @@
 </script>
 
 <div class="skill-wrapper">
-    <div class="skill-title">{skill.title} &bull;&nbsp;</div>
+    <div class="skill-title grey">{skill.title} &bull;&nbsp;</div>
     {#each skill.attributes as attribute, i}
         {#if i < skill.attributes.length - 1}
             <span class="skill-attr">{attribute}&nbsp;&bull;&nbsp;</span>

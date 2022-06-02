@@ -4,7 +4,7 @@ import IconText from "../IconText/IconText.svelte";
 
 <div class="top">
     <div>
-      <div class="title1">EDWARD PACE</div>
+      <div class="title1 green">EDWARD PACE</div>
       <div class="title2 grey">software developer</div>
     </div>
     <div class="portfolio-info">
