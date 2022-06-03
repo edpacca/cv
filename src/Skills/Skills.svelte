@@ -1,6 +1,6 @@
 <script>
 import Skill from "./components/Skill.svelte";
-import { js, java, csharp, nosql, tools, security, familiar } from './data/data';
+import { js, java, csharp, nosql, tools, security, familiar, aws } from './data/data';
 </script>
 
 <div class="skills-wrapper">
@@ -14,11 +14,12 @@ import { js, java, csharp, nosql, tools, security, familiar } from './data/data'
     <Skill skill={security}/>
     <hr class="hr-thin">
     <Skill skill={familiar}/>
+    <Skill skill={aws}/>
 </div>
 
 <style>
     .skills-wrapper {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
 </style>
