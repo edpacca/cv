@@ -5,6 +5,20 @@ body {
 	background-color: rgb(49, 59, 70);
 }
 
+main {
+	width: 210mm;
+	height: 270mm;
+	border: 1px solid black;
+	filter: drop-shadow(4px 4px 4px rgb(11, 13, 15));
+	background-color: white;
+	margin: auto;
+	margin-top: 3em;
+}
+
+.page-body {
+	padding: 1.5em;
+}
+
 /* Colours */
 .grey {
 	color: rgb(88, 104, 104);

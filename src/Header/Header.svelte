@@ -15,7 +15,7 @@ import IconText from "./IconText.svelte";
         link={"https://github.com/edpacca"}/>
       <IconText
         alt={"linkedin"}
-        text={"Linked in"}
+        text={"LinkedIn"}
         icon={"/assets/linkedin.svg"}
         link={"https://www.linkedin.com/in/edward-pace-ab88a971/"}/>
     </div>

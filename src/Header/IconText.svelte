@@ -20,8 +20,6 @@
     .icon {
         width: 1.2em;
         display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .icon-text {
