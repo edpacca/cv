@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Employment } from './Employment';
+    import type { Employment } from '../model/Employment';
     export let employment: Employment;
 </script>
 
@@ -7,34 +7,29 @@
     <div class="employment-header">
         <div>
             <div class="title4 green">{employment.title}</div>
-            <div class="dates green">{employment.dates}</div>
         </div>
         <div class="company grey">{employment.company}</div>
     </div>
-
-    <div>
+    <div class="dates green">{employment.dates}</div>
+    <div class="experience-wrapper">
         {#each employment.experiences as experience}
-            <div>{experience}</div>
+        <div class="bullet green">&#10151;</div>
+        <div class="experience"> {experience}</div>
         {/each}
     </div>
-    <hr class="hr-thin right-margin">
 </div>
 
 <style>
-
-    .right-margin {
-        margin-right: 16.5%;
-    }
-
     .employment-header {
         display: flex;
     }
 
     .company {
         margin-left: auto;
-        margin-right: 16.5%;
+        margin-right: 1.5em;
         order: 2;
         font-style: italic;
-        font-weight: 400;
+        font-weight: 600;
     }
+
 </style>

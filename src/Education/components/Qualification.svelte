@@ -1,18 +1,18 @@
 <script lang="ts">
-    import type { Qualification } from './Qualification';
+    import type { Qualification } from '../model/Qualification';
     export let qualification: Qualification;
 </script>
 
 <div class="qualification-wrapper">
     <div class="qualification-header">
         <div>
-            <div class="title4 grey">{qualification.qualification}</div>
+            <div class="title4 green">{qualification.qualification}</div>
             {#if qualification.grade}
                 <span class="grade">{qualification.grade}</span>
             {/if}
         </div>
         <div class="right-align">
-            <div class="institute grey">{qualification.institute}</div>
+            <div class="institute green">{qualification.institute}</div>
             <div class="dates green float-right">{qualification.dates}</div>
         </div>
 

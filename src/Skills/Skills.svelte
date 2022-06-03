@@ -1,6 +1,6 @@
 <script>
-import Skill from "./Skill.svelte";
-import { js, java, csharp, nosql, tools, security, familiar } from './data';
+import Skill from "./components/Skill.svelte";
+import { js, java, csharp, nosql, tools, security, familiar } from './data/data';
 </script>
 
 <div class="skills-wrapper">

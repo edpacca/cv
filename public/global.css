@@ -5,6 +5,16 @@ body {
 	background-color: rgb(49, 59, 70);
 }
 
+/* Colours */
+.grey {
+	color: rgb(88, 104, 104);
+}
+
+.green {
+	color: rgb(0, 65, 40);
+}
+
+/* Text */
 .title1 {
     font-size: 2.2em;
     font-weight: 130;
@@ -16,6 +26,10 @@ body {
     font-weight: lighter;
     margin-top: -0.3em;
 	letter-spacing: 0.1em;
+}
+
+a {
+	color: rgb(0, 65, 40);
 }
 
 .title3 {
@@ -42,23 +56,31 @@ body {
 	margin: 0.75em 1.5em;
 }
 
-.grey {
-	color: rgb(88, 104, 104);
+/* Formatting */
+.float-right {
+	float: right;
 }
 
-.green {
-	color: rgb(0, 65, 40);
+.two-thirds {
+	margin-right: 20%;
 }
 
-a {
-	color: rgb(0, 65, 40);
+/* Components */
+.experience-wrapper {
+	margin-top: 0.5em;
+	display: grid;
+	grid-template-columns: 1em 1fr;
+}
+
+.experience {
+	font-size: 0.8em;
+}
+
+.bullet {
+	font-size: 0.75em;
 }
 
 .dates {
 	font-size: 0.75em;
 	font-weight: bold;
-}
-
-.float-right {
-	float: right;
 }

@@ -1,9 +1,9 @@
-import type { Qualification } from "./Qualification"
+import type { Qualification } from "../model/Qualification"
 
 export const phd: Qualification = {
     qualification: "Ph.D",
     institute: "University of Edinburgh, UK",
-    departments: ["Centre for Science at Extreme Conditions", "School of Chemistry", "School of Physics & Astronomy" ],
+    departments: ["Centre for Science at Extreme Conditions,", "School of Chemistry,", "School of Physics & Astronomy" ],
     placement: "Placement: High Pressure Science Technology Advanced Research (HPSTAR), Shanghai, China",
     dates: "2015 - 2018",
 }

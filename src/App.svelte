@@ -2,6 +2,8 @@
 import Education from "./Education/Education.svelte";
 import Experience from "./Experience/Experience.svelte";
 import Header from "./Header/Header.svelte";
+import Projects from "./Projects/Projects.svelte";
+import References from "./References/References.svelte";
 import Skills from "./Skills/Skills.svelte";
 </script>
 
@@ -11,10 +13,14 @@ import Skills from "./Skills/Skills.svelte";
 				<Header />
 			</div>
 			<div class="content-grid">
-				<Experience />
+				<div class="left-col">
+					<Experience />
+					<Projects />
+				</div>
 				<div class="right-col">
 					<Skills />
 					<Education />
+					<References />
 				</div>
 			</div>
 		</div>
@@ -46,7 +52,12 @@ import Skills from "./Skills/Skills.svelte";
 
 	.right-col {
 		border-left: 1px solid rgb(88, 104, 104);
-		padding-left: 1em;	
+		padding-left: 1em;
+		margin-bottom: 1em;	
 	}
+
+	.left-col {
+        padding-right: 1em;
+    }
 
 </style>

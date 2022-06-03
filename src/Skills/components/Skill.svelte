@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Skill } from './Skill';
+    import type { Skill } from '../model/Skill';
     export let skill: Skill;
 </script>
 

@@ -1,6 +1,6 @@
 <script>
-import Qualification from './Qualification.svelte';
-import { phd, mchem } from './data';
+import Qualification from './components/Qualification.svelte';
+import { phd, mchem } from './data/data';
 </script>
 
 <div class='education-wrapper'>

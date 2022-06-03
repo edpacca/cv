@@ -1,4 +1,4 @@
-import type { Skill } from "./Skill";
+import type { Skill } from "../model/Skill";
 
 export const js: Skill = {title: "JavaScript", attributes: ["TypeScript", "Node.js", "React", "Redux", "Express", "Jest"]};
 export const csharp: Skill = {title: "C#", attributes: ["ASP.NET core", "Entity Framework"]};

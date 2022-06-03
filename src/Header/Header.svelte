@@ -1,5 +1,5 @@
 <script>
-import IconText from "../IconText/IconText.svelte";
+import IconText from "./IconText.svelte";
 </script>
 
 <div class="top">
@@ -15,7 +15,7 @@ import IconText from "../IconText/IconText.svelte";
         link={"https://github.com/edpacca"}/>
       <IconText
         alt={"linkedin"}
-        text={"linked in"}
+        text={"Linked in"}
         icon={"/assets/linkedin.svg"}
         link={"https://www.linkedin.com/in/edward-pace-ab88a971/"}/>
     </div>
@@ -45,6 +45,7 @@ import IconText from "../IconText/IconText.svelte";
     align-items: center;
     margin-left: auto;
     order: 2;
+    margin-right: 2em;
     display: flex;
     flex-direction: column;
   }
