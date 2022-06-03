@@ -1,42 +1,38 @@
 <script lang="ts">
-import Experience from "./Experience.svelte";
-import Header from "./Header.svelte";
-import Skills from "./Skills.svelte";
+import Header from "./Header/Header.svelte";
+import CV from "./Pages/CV.svelte";
+import Hobbies from "./Pages/Hobbies.svelte";
+
+type ActivePage = 'CV' | 'hobbies';
+let activePage: ActivePage = 'CV';
+
+function switchPage() {
+	console.log("EH");
+	if (activePage === 'hobbies') {
+		activePage = 'CV'
+	} else activePage = 'hobbies';
+}
+
 </script>
 
+<div>
+	<button on:click={switchPage}>next page</button>
+</div>
 <main>
-		<div class="page-body">
-			<div class="header">
-				<Header />
-			</div>
-			<div class="content-grid">
-				<Experience />
-				<Skills />
-			</div>
+	<div class="page-body">
+		<div class="header">
+			<Header />
 		</div>
+		{#if activePage === 'hobbies'}
+			<Hobbies />
+		{:else}
+			<CV />
+		{/if}
+	</div>
 </main>
 
 <style>
-	main {
-		width: 210mm;
-		height: 270mm;
-		border: 1px solid black;
-		filter: drop-shadow(9px);
-		background-color: white;
-		margin: auto;
-	}
-
-	.page-body {
-		padding: 1em;
-	}
-
-	.header {
+    .header {
 		margin-bottom: 1em;
 	}
-
-	.content-grid {
-		display: grid;
-		grid-template-columns: 75% 1fr;
-	}
-
 </style>
