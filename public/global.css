@@ -70,6 +70,10 @@ a {
 	margin: 0.75em 1.5em;
 }
 
+.bullet-icon {
+	width: 0.4em;
+}
+
 /* Formatting */
 .float-right {
 	float: right;
@@ -88,10 +92,6 @@ a {
 
 .experience {
 	font-size: 0.8em;
-}
-
-.bullet {
-	font-size: 0.75em;
 }
 
 .dates {

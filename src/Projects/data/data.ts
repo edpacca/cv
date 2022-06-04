@@ -14,7 +14,7 @@ export const wapp: Project = {
 export const wizardGrenade: Project = {
     title: "Wizard Grenade 2D Game",
     dates: "Nov 2021 - May 2022",
-    link: "https://pandala.edpacca.co.uk",
+    link: "https://github.com/Edpacca/WizardGrenade2",
     technologies: [ "C#", "XNA framework" ],
     experiences: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
