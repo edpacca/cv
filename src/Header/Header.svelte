@@ -11,12 +11,12 @@ import IconText from "./IconText.svelte";
       <IconText
         alt={"github"}
         text={"Edpacca"}
-        icon={"/assets/github.png"}
+        icon={"./assets/github.png"}
         link={"https://github.com/edpacca"}/>
       <IconText
         alt={"linkedin"}
         text={"LinkedIn"}
-        icon={"/assets/linkedin.png"}
+        icon={"./assets/linkedin.png"}
         link={"https://www.linkedin.com/in/edward-pace-ab88a971/"}/>
     </div>
 </div>
@@ -24,15 +24,15 @@ import IconText from "./IconText.svelte";
   <IconText
     alt={"email"}
     text={"edwardjpace@gmail.com"}
-    icon={"/assets/mail.png"}/>
+    icon={"./assets/mail.png"}/>
   <IconText
     alt={"phone"}
     text={"+44 7305 159 528"}
-    icon={"/assets/phone.png"}/>
+    icon={"./assets/phone.png"}/>
   <IconText
     alt={"address"}
     text={"30/3 Lutton Pl. Edinburgh EH8 9PG"}
-    icon={"/assets/home.png"}/>
+    icon={"./assets/home.png"}/>
 </div>
 
 <style>
