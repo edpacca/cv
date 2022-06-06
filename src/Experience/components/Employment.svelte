@@ -13,13 +13,12 @@
         <div class="company grey">{employment.company}</div>
     </div>
     <div class="dates green">{employment.dates}</div>
-    <div class="experience-wrapper">
+    <ul class="experience-wrapper">
         {#each employment.experiences as experience}
-        <div class="bullet-icon green">&bull;</div>
         <!-- <Icon data={faCaretRight} class="bullet-icon green"/> -->
-        <div class="experience"> {experience}</div>
+        <li class="experience"> {experience}</li>
         {/each}
-    </div>
+    </ul>
 </div>
 
 <style>
