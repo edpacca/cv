@@ -7,7 +7,6 @@ type ActivePage = 'CV' | 'hobbies';
 let activePage: ActivePage = 'CV';
 
 function switchPage() {
-	console.log("EH");
 	if (activePage === 'hobbies') {
 		activePage = 'CV'
 	} else activePage = 'hobbies';
@@ -16,7 +15,8 @@ function switchPage() {
 </script>
 
 <div>
-	<button on:click={switchPage}>next page</button>
+	
+	<!-- <button on:click={switchPage}>next page</button> -->
 </div>
 <main>
 	<div class="page-body">
