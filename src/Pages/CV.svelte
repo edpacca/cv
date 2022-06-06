@@ -20,8 +20,6 @@
 
 <style>
 
-
-
 	.content-grid {
 		display: grid;
 		grid-template-columns: 65% 1fr;

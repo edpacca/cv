@@ -15,7 +15,8 @@
     <div class="dates green">{employment.dates}</div>
     <div class="experience-wrapper">
         {#each employment.experiences as experience}
-        <Icon data={faCaretRight} class="bullet-icon green"/>
+        <div class="bullet-icon green">&bull;</div>
+        <!-- <Icon data={faCaretRight} class="bullet-icon green"/> -->
         <div class="experience"> {experience}</div>
         {/each}
     </div>
