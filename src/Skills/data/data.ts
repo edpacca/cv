@@ -1,8 +1,8 @@
 import type { Skill } from "../model/Skill";
 
-export const js: Skill = {title: "JavaScript", attributes: ["TypeScript", "Node.js", "React", "Redux", "Express", "Jest"]};
+export const js: Skill = {title: "JavaScript", attributes: ["TypeScript", "Node.js", "React", "Redux", "Express", "Jest", "npm"]};
 export const csharp: Skill = {title: "C#", attributes: ["ASP.NET core", "Entity Framework"]};
-export const java: Skill = {title: "Java", attributes: ["SpringBoot", "Webflux"]};
+export const java: Skill = {title: "Java", attributes: ["SpringBoot", "Webflux", "Gradle"]};
 export const nosql: Skill = {title: "Db", attributes: ["DynamoDB", "MongoDB", "PostGresSQL", "MySQL"]};
 export const tools: Skill = {title: "Tools", attributes: ["Git", "Docker", "Postman", "SSH"]}
 export const security: Skill = {title: "Security", attributes: [ "SSL", "OAuth2.0", "JWT", "PKCE"]}

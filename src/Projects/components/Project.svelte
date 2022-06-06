@@ -1,12 +1,16 @@
 <script lang="ts">
-    import type { Project } from './Project';
+    import type { Project } from '../model/Project';
     export let project: Project;
+    import Icon from 'svelte-awesome';
+    import { faLink } from '@fortawesome/free-solid-svg-icons/faLink'
+    import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight'
 </script>
 
 <div class="project-wrapper">
     <div class="project-header">
         <div>
-            <div class="title4 green">{project.title}</div>
+            <a class="title4 green" href={project.link} target="_blank">{project.title}</a>
+            <!-- <a class="title4 green" href={project.link} target="_blank"><Icon data={faLink} class="green"/> {project.title}</a> -->
         </div>
         <div class="tech grey">
         {#each project.technologies as tech, i }
@@ -19,12 +23,11 @@
         </div>
     </div>
     <div class="dates green">{project.dates}</div>
-    <div class="experience-wrapper">
+    <ul class="experience-wrapper">
         {#each project.experiences as experience}
-        <div class="bullet green">&#10151;</div>
-        <div class="experience">{experience}</div>
+        <li class="experience">{experience}</li>
         {/each}
-    </div>
+    </ul>
 </div>
 
 <style>
@@ -43,5 +46,4 @@
     .project-wrapper {
         margin-bottom: 1em;
     }
-
 </style>

@@ -1,6 +1,8 @@
 <script lang="ts">
     import type { Employment } from '../model/Employment';
     export let employment: Employment;
+    import Icon from 'svelte-awesome';
+    import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight'
 </script>
 
 <div>
@@ -11,12 +13,12 @@
         <div class="company grey">{employment.company}</div>
     </div>
     <div class="dates green">{employment.dates}</div>
-    <div class="experience-wrapper">
+    <ul class="experience-wrapper">
         {#each employment.experiences as experience}
-        <div class="bullet green">&#10151;</div>
-        <div class="experience"> {experience}</div>
+        <!-- <Icon data={faCaretRight} class="bullet-icon green"/> -->
+        <li class="experience"> {experience}</li>
         {/each}
-    </div>
+    </ul>
 </div>
 
 <style>
@@ -31,5 +33,4 @@
         font-style: italic;
         font-weight: 600;
     }
-
 </style>
