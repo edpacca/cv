@@ -48,5 +48,4 @@
     .project-wrapper {
         margin-bottom: 1em;
     }
-
 </style>

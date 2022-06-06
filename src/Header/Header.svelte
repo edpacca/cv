@@ -56,6 +56,4 @@ import IconText from "./IconText.svelte";
     column-gap: 1.5em;
     align-items: center;
   }
-
-
 </style>
