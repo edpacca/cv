@@ -1,37 +1,36 @@
 <script lang="ts">
-	import Header from "./Header/Header.svelte";
-	import CV from "./Pages/CV.svelte";
-	import { jsPDF } from "jspdf";
-
-	async function generatePdf() {
-		var doc = new jsPDF('portrait', 'pt', 'a3');
-		var source = window.document.getElementById("page-body");
-		await doc.html(source);
-		doc.save('test.pdf');
-	}
+    import data from "./data/cv.json";
+    import About from "./lib/About.svelte";
+    import Career from "./lib/Career.svelte";
+    import Skills from "./lib/Skills.svelte";
+    import Header from "./lib/Header.svelte";
+    import Education from "./lib/Education.svelte";
+    import Projects from "./lib/Projects.svelte";
 </script>
 
-<div>
-	<button class="pdf-button" on:click={generatePdf}>PDF</button>
-</div>
 <main>
-	<div class="page-body" id="page-body">
-		<div class="header">
-			<Header />
-		</div>
-		<CV />
-	</div>
+    <Header profile={data.profile} urls={data.urls}/>
+    <About summary={data.summary}/>
+    <div class="">
+        <section>
+            <Skills skills={data.skills}/>
+        </section>
+        <section>
+            <Career experience={data.experience}/>
+        </section>
+        <section>
+            <Education education={data.education}/>
+        </section>
+        <section>
+            <Projects projects={data.projects}/>
+        </section>
+    </div>
 </main>
 
 <style>
-    .header {
-		margin-bottom: 1em;
-	}
+    section {
+        padding: 1em;
+        border-bottom: 2px solid var(--mid-grey);
+    }
 
-	.pdf-button {
-		color: white;
-		background-color: rgb(30, 30, 30);
-		border-radius: 3px;
-		margin: 1em;
-	}
 </style>

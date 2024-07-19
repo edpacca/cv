@@ -1,0 +1,155 @@
+:root {
+  /* Monochromes */
+  --white: rgb(255, 245, 235);
+  --white-50: rgba(250, 235, 215, 0.5);
+  --black: rgb(0, 0, 0);
+  --black-50: rgb(0, 0, 0, 0.5);
+  --blue-black: #1c1927;
+
+  --light-tan: rgb(220, 215, 200);
+  --light-grey: rgb(150, 150, 150);
+  --mid-grey: rgb(85, 85, 85);
+  --grey: rgb(50, 50, 50);
+  --dark-grey: rgb(20, 20, 20);
+
+    /* Themes */
+  --gold-bright: rgb(255, 177, 8);
+  --gold-dark: rgb(194, 132, 0);
+  --teal-bright: rgb(18, 235, 152);
+  --teal-dark: rgb(4, 168, 105);
+  --sky-bright: rgb(124, 207, 255);
+  --sky-dark: rgb(6, 123, 190);
+  --magenta-bright: rgb(248, 55, 119);
+  --magenta-dark: rgb(248, 55, 119);
+
+  /* Global Theme */
+  --bg0: var(--white);
+  --bg1: var(--grey);
+  --primary: var(--blue-black);
+  --secondary: var(--white);
+  --tertiary: var(--dark-grey);
+  --highlight: var(--teal-dark);
+  --highlight: rgb(6, 77, 79);
+  --primary-50: var(--black-50);
+  --secondary-50: var(--white-50);
+
+  /* Other */
+	--transition-time: 0.4s;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: var(--bg0);
+  color: var(--primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --max-width: 820px;
+  --main-padding: 4rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--main-padding);
+  text-align: left;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 300;
+  text-align: center;
+  color: var(--mid-grey);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--highlight);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-weight: 700;
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+
+ul {
+  margin: 0.5rem 0em;
+  padding-left: 0;
+}
+
+li {
+   list-style-image: url('/src/assets/symbols/diamond-bullet.png');
+}
+
+li.none {
+  list-style-type: none;
+  position: relative;
+}
+
+hr {
+  background-color: var(--mid-grey);
+  height: 2px;
+  border: 0;
+  opacity: 0.5;
+  margin: 1rem 0;
+}
+
+hr.thin {
+  height: 1px;
+  background-color: var(--light-grey);
+  margin: 1rem 1rem;
+}
+
+a {
+  color: var(--highlight);
+  font-weight: 300;
+}
+
+.icon {
+  fill: var(--highlight);
+}
+
+.date {
+  font-weight: 300;
+  color: var(--mid-grey);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.highlighted {
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+.one-line {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tight {
+  margin-top: -0.2rem;
+}
