@@ -15,7 +15,7 @@
                 <div class="company">
                     <div class="bold">{job.company}</div>
                     <img
-                        src={`src/assets/icons/${job.icon}`}
+                        src={`assets/icons/${job.icon}`}
                         alt={`${job.company} logo`}
                         class="company-logo"
                     />

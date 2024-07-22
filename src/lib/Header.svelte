@@ -8,7 +8,7 @@
 </script>
 
 <header>
-  <img src="/src/assets/druid.png" alt="Eddie Pace" class="profile-img"/>
+  <img src="assets/druid.png" alt="Eddie Pace" class="profile-img"/>
   <div>
     <div class="header-info-container">
       <div>
