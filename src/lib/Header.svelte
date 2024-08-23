@@ -5,10 +5,12 @@
     export let profile;
     export let urls;
 
+    const profileImgPath = "assets/profile2024.png"
+
 </script>
 
 <header>
-  <img src="assets/druid.png" alt="Eddie Pace" class="profile-img"/>
+  <img src={profileImgPath} alt="Eddie Pace" class="profile-img"/>
   <div>
     <div class="header-info-container">
       <div>
