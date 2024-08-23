@@ -32,16 +32,16 @@
   ],
   "references": [
     {
-      "name": "Marzio Superina",
-      "relationship": "Project lead",
-      "email": "msuperina@x.com",
-      "company": "Scott Logic"
-    },
-    {
       "name": "Cal Bryant",
       "relationship": "Head of Engineering",
       "email": "cal.bryant@cydar.co.uk",
       "company": "Cydar Medical"
+    },
+    {
+      "name": "Marzio Superina",
+      "relationship": "Project lead",
+      "email": "msuperina@x.com",
+      "company": "Scott Logic"
     }
   ],
   "education": [
@@ -72,11 +72,12 @@
     {
       "job_title": "Software Engineer",
       "company": "Cydar Medical",
+      "location": "Cambridge UK",
       "icon": "cydar.webp",
       "dates": "June 2023 - present",
       "notes": [
         {
-          "note": "Delivered new pre-preoperative software for surgical planning, from conception to users. Working on everything from backend algorithms for 3D visuals to frontend architecture.s",
+          "note": "Delivered new pre-preoperative software for surgical planning, from conception to first release. Developed a customised widget library based on the IMB Carbon design, and was a key force in designing the structure of the frontend architecture. Also active in development of the backend code, contributing an algorithm to handle % based zoom for the 3D viewer.",
           "skills": [
             "Python",
             "PyQT",
@@ -85,16 +86,18 @@
           ]
         },
         {
-          "note": "Set up full CI pipeline in Github Actions for the In Theatre GUI.",
+          "note": "Set up full CI pipeline in Github Actions for the In Theatre GUI application. This involves running a containerised Selenium server / web-driver to perform complex automated integration tests, and producing downloadable artifacts for inspection when tests fail.",
           "skills": [
             "Github actions",
             "Bash",
             "Docker",
-            "Python"
+            "Python",
+            "Typescript",
+            "Selenium"
           ]
         },
         {
-          "note": "Contributed to development of a testing framework to compare and benchmark new code, helping to optimise 2D/3D registration times during surgery.",
+          "note": "Contributed to development of a testing framework to compare and benchmark updates to the proprietary algorithm for identifying ROI in CT scans, helping to optimise 2D/3D registration times during surgery.",
           "skills": [
             "HTML",
             "TS",
@@ -114,11 +117,12 @@
     {
       "job_title": "Jr. Software Engineer",
       "company": "Cydar Medical",
+      "location": "Cambridge UK",
       "icon": "cydar.webp",
       "dates": "Aug 2022 - June 2023",
       "notes": [
         {
-          "note": "Hit the ground running and quickly picked up new technologies to begin contributing.",
+          "note": "Hit the ground running and had to quickly learn new technologies in order to begin contributing to the codebase.",
           "skills": [
             "Ubuntu",
             "Python",
@@ -128,14 +132,17 @@
           ]
         },
         {
-          "note": "Assigned a solo project to adapt the surgery browser-based GUI; rebuilding the frontend UI using sophisticated frontend framework",
+          "note": "Assigned a solo project to rebuild the entire frontend for the 'In Theatre GUI' in Svelte. This is a complex browser application used by surgeons during operations. This was challenging as it was initially written in pure JS/TS targetting a Django web-app, using websockets and a complex Redux store to manage state. A highlight was figuring out how to wrap the Redux store in a way that exposed state based variables to make use of the Svelte store api. I am proud of this work and it demonstrates my ability to rapidly learn someting new and become an effective contributer. I learned an entirely new codebase, and re-implemented it in a programming framework which was relatively new to me at the time.",
           "skills": [
             "Svelte",
-            "TS"
+            "TS",
+            "Redux",
+            "Django",
+            "Python"
           ]
         },
         {
-          "note": "Worked on small team to deliver new features for the pre-operative planning tool",
+          "note": "Worked on small team to deliver new features specifically for partners for the pre-operative planning tool. This involved commincated with the partner company, discussing their needs and compromising on the most effective way to deliver this.",
           "skills": [
             "Python",
             "PyQT"
@@ -146,6 +153,7 @@
     {
       "job_title": "Associate Developer",
       "company": "Scott Logic",
+      "location": "Edinburgh UK",
       "icon": "scott-logic.webp",
       "dates": "Feb 2022 - Aug 2022",
       "notes": [
@@ -173,6 +181,7 @@
     {
       "job_title": "Graduate Developer",
       "company": "Scott Logic",
+      "location": "Edinburgh UK",
       "icon": "scott-logic.webp",
       "dates": "Aug 2021 - Feb 2022",
       "notes": [
@@ -191,7 +200,8 @@
     },
     {
       "job_title": "Postdoctoral Researcher",
-      "company": "McMahon group, University of Edinburgh",
+      "company": "University of Edinburgh",
+      "location": "McMahon Group",
       "icon": "uoe.webp",
       "dates": "2018 - 2020",
       "notes": [
@@ -259,7 +269,7 @@
     {
       "name": "Full-stack Wedding App",
       "published": true,
-      "url": "https://seashell-app-8zymt.ondigitalocean.app/wapp",
+      "url": "https://edpacca.co.uk/wapp",
       "tech": [
         "React/Redux",
         "Express",
@@ -283,7 +293,7 @@
     {
       "name": "Wizard Grenade 2D game",
       "published": true,
-      "url": "https://seashell-app-8zymt.ondigitalocean.app/wizard-grenade",
+      "url": "https://edpacca.co.uk/wizard-grenade",
       "tech": [
         "C#",
         "XNA Framework"
