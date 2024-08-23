@@ -131,7 +131,7 @@ a {
   fill: var(--highlight);
 }
 
-.date {
+.date, .light {
   font-weight: 300;
   color: var(--mid-grey);
 }
