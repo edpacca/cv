@@ -10,7 +10,6 @@
 
 <Tooltip text={text}>
     <a href={link} target="_blank">
-        <!-- <img src={iconPath} alt={`${icon} icon`}/> -->
         <svg
             class={$$props.class}
             viewBox={"0 0 100 100"}>
