@@ -9,13 +9,18 @@
             <div>
                 <div class="degree-header">
                     <h3>{degree.degree}</h3>
+                    {#if degree.subject}
+                        <span>
+                            {degree.subject}
+                        </span>
+                    {/if}
                     {#if degree.grade}
                         <div class="grade">
                             {degree.grade}
                         </div>
                     {/if}
                 </div>
-                <div class="bold">
+                <div class="light">
                     {degree.awarding_body},
                     {degree.country}
                 </div>
@@ -23,25 +28,26 @@
                     {degree.years}
                 </div>
             </div>
-            <ul class="depts">
+            <!-- <ul class="depts">
                 {#each degree.departments as department}
                     <li>
                         {department}
                     </li>
                 {/each}
-            </ul>
+            </ul> -->
         </div>
     {/each}
 </div>
 
 <style>
-    .degree-container {
-        margin-bottom: 0.5rem;
-    }
-
     .education-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+    }
+
+    .degree-container {
+        margin-bottom: 0.5rem;
+        flex: 1;
     }
 
     .degree-header {
