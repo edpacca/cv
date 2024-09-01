@@ -6,6 +6,14 @@
 
 <div class="skills-container">
     {#each skills as skill, i}
-        {skill}{#if i < skills.length - 1},&nbsp;{/if}
+        <span>
+            {skill}{#if i < skills.length - 1},&nbsp;{/if}
+        </span>
     {/each}
 </div>
+
+
+<style>
+    .skills-container {
+    }
+</style>
