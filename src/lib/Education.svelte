@@ -10,7 +10,7 @@
                 <div class="degree-header">
                     <h3>{degree.degree}</h3>
                     {#if degree.subject}
-                        <span>
+                        <span class="subject">
                             {degree.subject}
                         </span>
                     {/if}
@@ -59,6 +59,10 @@
     .grade {
         font-size: 0.95rem;
         font-style: italic;
+        font-weight: 500;
+    }
+
+    .subject {
         font-weight: 500;
     }
 </style>
