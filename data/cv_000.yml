@@ -8,7 +8,7 @@ profile:
   address: 711 E. 6th Ave. Vancouver V5T1L7
   city: Vancouver, CA
   website: edpacca.co.uk
-summary: "Scientist turned software engineer; highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Enjoys developing scratch built apps as personal projects."
+summary: "Scientist turned software engineer - a highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Throughout my career I have proven myself capable of picking up new tech and rapidly becoming proficient. I enjoy building apps from scratch for personal projects, and scripting things that take too long. I secretly like css."
 urls:
   github: https://github.com/edpacca
   linkedIn: https://www.linkedin.com/in/edward-pace-ab88a971/
@@ -17,16 +17,18 @@ urls:
 skills:
     - Python
     - Typescript
-    - Java
     - C#
+    - C++
+    - Bash
+    - Java
+    - React
+    - Svelte,
+    - PyQT
     - Docker
     - Git
-    - Bash
     - Vim
     - AWS
     - Linux
-    - React
-    - C++
     - VTK
 references:
   - name: Cal Bryant
