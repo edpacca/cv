@@ -5,19 +5,23 @@
 
 
 <div class="info-line">
-  <Email size={24} class="icon"/>
+  <Email size={24} class="icon no-print"/>
+  <Email size={16} class="icon print-only"/>
   <div>{profile.email}</div>
 </div >
 <div class="info-line">
-  <PhoneVoice size={24} class="icon"/>
+  <PhoneVoice size={24} class="icon no-print"/>
+  <PhoneVoice size={16} class="icon print-only"/>
   <div>{profile.phone}</div>
 </div>
 <div class="info-line">
-  <LocationFilled size={24} class="icon"/>
+  <LocationFilled size={24} class="icon no-print"/>
+  <LocationFilled size={16} class="icon print-only"/>
   <div>{profile.city}</div>
 </div>
 <div class="info-line">
-  <CheckmarkFilled size={24} class="icon"/>
+  <CheckmarkFilled size={24} class="icon no-print"/>
+  <CheckmarkFilled size={16} class="print-only"/>
 <div>Eligible to work in CA</div>
 </div>
 

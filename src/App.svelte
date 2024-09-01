@@ -63,4 +63,13 @@
     section {
         padding: 1em;
     }
+
+    @media print {
+        .page {
+            box-shadow: none;
+            aspect-ratio: unset;
+            margin: 0;
+            padding: 0;
+        }
+    }
 </style>

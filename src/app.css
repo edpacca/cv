@@ -65,11 +65,40 @@ body {
   font-weight: 300;
 }
 
+
 #app {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--main-padding);
   text-align: left;
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+
+  #app {
+    max-width: none;
+    padding: 0;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -94,7 +123,7 @@ h2 {
 h3 {
   font-weight: 700;
   color: var(--grey);
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 ul {

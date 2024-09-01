@@ -15,9 +15,9 @@
                         </span>
                     {/if}
                     {#if degree.grade}
-                        <div class="grade">
+                        <span class="grade">
                             {degree.grade}
-                        </div>
+                        </span>
                     {/if}
                 </div>
                 <div class="light">
@@ -41,12 +41,11 @@
 
 <style>
     .education-container {
-        display: grid;
         display: flex;
     }
 
     .degree-container {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.5em;
         flex: 1;
     }
 
@@ -57,12 +56,22 @@
     }
 
     .grade {
-        font-size: 0.95rem;
+        font-size: 0.95em;
         font-style: italic;
         font-weight: 500;
     }
 
     .subject {
         font-weight: 500;
+    }
+
+    @media print {
+        .education-container {
+            gap: 1em;
+        }
+
+        .degree-container {
+            flex: unset;
+        }
     }
 </style>
