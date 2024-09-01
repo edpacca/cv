@@ -12,7 +12,7 @@
       <div>
         <div class="header-title">
           <h1>{profile.name}</h1>
-          <h3>{profile.job_title}</h3>
+          <h3>&lbrace; {profile.job_title} &rbrace;</h3>
         </div>
       </div>
       <div class="contact-container">
@@ -26,7 +26,6 @@
     display: grid;
     grid-template-columns: var(--profile-img-height) 1fr;
     gap: 1em;
-    height: var(--profile-img-height);
     margin-bottom: 1em;
   }
 
