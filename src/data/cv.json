@@ -10,7 +10,7 @@
     "city": "Vancouver, CA",
     "website": "edpacca.co.uk"
   },
-  "summary": "Scientist turned software engineer - a highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Throughout my career I have proven myself capable of picking up new tech and rapidly becoming proficient. I enjoy building apps from scratch for personal projects, and scripting things that take too long. I secretly like css.",
+  "summary": "Scientist turned software engineer - a highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Throughout my career I have proven myself capable of picking up new tech and rapidly becoming proficient. I enjoy building apps from scratch for personal projects. I want to explore backend programming more, but I secretly like css.",
   "urls": {
     "github": "https://github.com/edpacca",
     "linkedIn": "https://www.linkedin.com/in/edward-pace-ab88a971/",
@@ -51,7 +51,7 @@
   "education": [
     {
       "degree": "Ph.D",
-      "subject": "Condensed Matter Physics",
+      "subject": "Cond. Matter Physics",
       "awarding_body": "University of Edinburgh",
       "country": "UK",
       "years": "2015 - 2018",
