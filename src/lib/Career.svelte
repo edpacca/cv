@@ -29,8 +29,8 @@
                     {#each job.notes as description}
                         <li>{description.note}
                             {#if description.skills}
-                            <span class="highlighted one-line">
-                                {stringList(description.skills)}
+                            <span class="highlighted one-line left-gap">
+                                {stringList(description.skills, "|")}
                             </span>
                             {/if}
                         </li>
@@ -57,10 +57,15 @@
     }
 
     .company {
-        display: block;
+        display: flex;
+        gap: 0.5rem;
     }
 
     .company-logo {
-        height: 2.5em;
+        height: 2em;
+    }
+
+    .left-gap {
+        margin-left: 0.5rem;
     }
 </style>
