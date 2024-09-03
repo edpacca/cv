@@ -16,6 +16,11 @@
                    {project.year}
                 </span>
             {/if}
+            {#if project.tech}
+            <span class="highlighted one-line">
+                {stringList(project.tech, "|")}
+            </span>
+            {/if}
             {#if project.url}
             <a href={project.url}>{project.url}</a>
             {/if}
@@ -23,11 +28,7 @@
         </div>
         <div>
             {project.description}
-            {#if project.tech}
-            <span class="highlighted one-line">
-                {stringList(project.tech)}
-            </span>
-            {/if}
+
         </div>
     </div>
     {#if i < projects.length - 1}
