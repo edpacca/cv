@@ -8,6 +8,7 @@
     import Projects from "./lib/Projects.svelte";
     import References from "./lib/References.svelte";
     import Portfolio from "./lib/Portfolio.svelte";
+    import Interests from "./Interests.svelte";
 </script>
 
 <main>
@@ -31,13 +32,18 @@
         <section>
             <Projects projects={data.projects}/>
         </section>
-        <hr/>
-        <section>
-            <References references={data.references}/>
-        </section>
+        <div class="two-col border-top">
+            <section>
+                <Interests interests={data.interests}/>
+            </section>
+            <div class="v-line"/>
+            <section>
+                <References references={data.references}/>
+            </section>
+        </div>
         <hr/>
         <Portfolio urls={data.urls}/>
-    </div>
+        </div>
 </main>
 
 <style>
