@@ -1,30 +1,32 @@
 <script lang="ts">
-  import PhoneVoice from "carbon-icons-svelte/lib/PhoneVoice.svelte";
-  import Email from "carbon-icons-svelte/lib/Email.svelte";
-  import Home from "carbon-icons-svelte/lib/Home.svelte";
-
+  import { LocationFilled, Email, PhoneVoice, Wikis, CheckmarkFilled } from "carbon-icons-svelte";
   export let profile;
 </script>
 
-<div class="contact-info">
-    <Email size={24} class="icon"/>
-    <div>{profile.email}</div>
+
+<div class="info-line">
+  <Email size={24} class="icon no-print"/>
+  <Email size={16} class="icon print-only"/>
+  <div>{profile.email}</div>
 </div >
-  <div class="contact-info">
-    <PhoneVoice size={24} class="icon"/>
-    <div>{profile.phone}</div>
+<div class="info-line">
+  <PhoneVoice size={24} class="icon no-print"/>
+  <PhoneVoice size={16} class="icon print-only"/>
+  <div>{profile.phone}</div>
 </div>
-<div class="contact-info">
-    <Home size={24} class="icon"/>
-    <div>{profile.address}</div>
+<div class="info-line">
+  <LocationFilled size={24} class="icon no-print"/>
+  <LocationFilled size={16} class="icon print-only"/>
+  <div>{profile.city}</div>
+</div>
+<div class="info-line">
+  <CheckmarkFilled size={24} class="icon no-print"/>
+  <CheckmarkFilled size={16} class="print-only"/>
+<div>Eligible to work in CA</div>
 </div>
 
 <style>
-  .contact-info {
-    display: flex;
-    flex-direction: row;
-    gap: 0.3em;
-    font-weight: 400;
-    color: var(--highlight);
+  .info-line {
+    flex: 1;
   }
 </style>

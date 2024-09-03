@@ -12,8 +12,11 @@
                     <h3>{job.job_title}</h3>
                     <div class="date">{job.dates}</div>
                 </div>
-                <div class="company">
-                    <div class="bold">{job.company}</div>
+                <div class="company-container">
+                    <div class="company">
+                        <div class="bold">{job.company}</div>
+                        <div class="light">{job.location}</div>
+                    </div>
                     <img
                         src={`assets/icons/${job.icon}`}
                         alt={`${job.company} logo`}
@@ -26,8 +29,8 @@
                     {#each job.notes as description}
                         <li>{description.note}
                             {#if description.skills}
-                            <span class="highlighted one-line">
-                                {stringList(description.skills)}
+                            <span class="highlighted one-line left-gap">
+                                {stringList(description.skills, "|")}
                             </span>
                             {/if}
                         </li>
@@ -46,14 +49,23 @@
         grid-template-columns: 1fr auto auto;
     }
 
-    .company {
+    .company-container {
         text-align: right;
         display: flex;
-        gap: 0.5em;
+        gap: 1em;
         align-items: center;
+    }
+
+    .company {
+        display: flex;
+        gap: 0.5rem;
     }
 
     .company-logo {
         height: 2em;
+    }
+
+    .left-gap {
+        margin-left: 0.5rem;
     }
 </style>
