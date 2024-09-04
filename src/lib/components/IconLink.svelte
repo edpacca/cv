@@ -37,13 +37,20 @@
         justify-content: center;
         align-items: center;
     }
+
     svg {
-        height: 2rem;
+        height: 2em;
         transition: var(--transition-time);
         fill: var(--primary);
     }
 
     svg:hover {
         fill: var(--highlight);
+    }
+
+    @media print {
+        svg {
+            height: 1.5em;
+        }
     }
 </style>

@@ -8,7 +8,7 @@
     import Projects from "./lib/Projects.svelte";
     import References from "./lib/References.svelte";
     import Portfolio from "./lib/Portfolio.svelte";
-    import Interests from "./Interests.svelte";
+    import Interests from "./lib/Interests.svelte";
 </script>
 
 <main>
@@ -28,22 +28,25 @@
             <Career experience={data.experience}/>
         </section>
     </div>
-    <div class="page">
+    <div class="page stretch-container page2">
         <section>
             <Projects projects={data.projects}/>
         </section>
-        <div class="two-col border-top">
+        <div class="stretch-bottom">
+            <div class="two-col border-top border-bottom print-margin">
+                <section>
+                    <Interests interests={data.interests}/>
+                </section>
+                <div class="v-line"/>
+                <section>
+                    <References references={data.references}/>
+                </section>
+            </div>
             <section>
-                <Interests interests={data.interests}/>
-            </section>
-            <div class="v-line"/>
-            <section>
-                <References references={data.references}/>
+                <Portfolio urls={data.urls}/>
             </section>
         </div>
-        <hr/>
-        <Portfolio urls={data.urls}/>
-        </div>
+    </div>
 </main>
 
 <style>
@@ -77,5 +80,26 @@
             margin: 0;
             padding: 0;
         }
+
+        .page2 {
+            break-inside: avoid;
+        }
+
+        .stretch-container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .stretch-bottom {
+            margin-top: auto !important;
+        }
+
+        .print-margin {
+            margin-top: 2em;
+        }
+
+        .v-line {
+        border-right: 1px solid var(--light-grey);
+    }
     }
 </style>
