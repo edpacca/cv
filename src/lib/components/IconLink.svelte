@@ -20,7 +20,7 @@
             </svg>
         </a>
     </Tooltip>
-    <div>{text}</div>
+    <div class="text">{text}</div>
 </div>
 
 <style>
@@ -51,6 +51,12 @@
     @media print {
         svg {
             height: 1.5em;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .text {
+            display: none;
         }
     }
 </style>

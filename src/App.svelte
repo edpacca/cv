@@ -29,6 +29,9 @@
         </section>
     </div>
     <div class="page stretch-container page2">
+        <div class="media-only">
+            <hr/>
+        </div>
         <section>
             <Projects projects={data.projects}/>
         </section>
@@ -73,7 +76,11 @@
         padding: 1em;
     }
 
-    @media print {
+    .media-only {
+        display: none;
+    }
+
+    @media print, screen and (max-width: 1024px) {
         .page {
             box-shadow: none;
             aspect-ratio: unset;
@@ -100,6 +107,24 @@
 
         .v-line {
         border-right: 1px solid var(--light-grey);
+        }
     }
+
+    @media screen and (max-width: 1024px) {
+        .media-only {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 892px) {
+        .two-col {
+            grid-template-columns: 1fr;
+        }
+
+        .v-line {
+            border-bottom: 2px solid var(--light-grey);
+            height: unset;
+            width: 100%;
+        }
     }
 </style>

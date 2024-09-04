@@ -58,6 +58,11 @@
   --main-padding: 4rem;
 
   --profile-img-height: 7em;
+
+  --breakpoint-laptop: 1024px;
+  --breakpoint-tablet-l: 892px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-mobile: 480px;
 }
 
 body {
@@ -178,6 +183,33 @@ a {
 
 .print-only {
   display: none;
+}
+
+@media screen and (max-width: 892px) {
+  li {
+    margin: 0.5em 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #app {
+    padding: 2em 1em !important;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  #app {
+    padding: 2em 0em !important;
+  }
+
+  .one-line {
+    overflow: unset;
+    white-space: unset;
+  }
+
+  body {
+    font-size: 13px !important;
+  }
 }
 
 @media print {

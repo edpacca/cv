@@ -25,4 +25,11 @@
     .reference {
         flex: 1;
     }
+
+    @media screen and (max-width: 768px) {
+        .references-container {
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
 </style>

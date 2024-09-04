@@ -74,4 +74,10 @@
             flex: unset;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .education-container {
+            flex-direction: column;
+        }
+    }
 </style>
