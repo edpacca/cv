@@ -265,7 +265,10 @@
       "published": true,
       "url": "https://github.com/edpacca-cydar/spotify-cmd",
       "year": 2022,
-      "description": "Bash scripted Command Line Interface leveraging the Spotify Dev API to play and manage songs and playlists."
+      "description": "Bash scripted Command Line Interface leveraging the Spotify Dev API to play and manage songs and playlists.",
+      "tech": [
+        "Bash"
+      ]
     },
     {
       "name": "Full-stack Wedding App",
