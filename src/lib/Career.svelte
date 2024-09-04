@@ -6,14 +6,12 @@
 
 <h2>Experience</h2>
     {#each experience as job, i}
-        <div>
+        <div class="no-page-break">
             <div class="employment-header">
-                <div>
                     <h3>{job.job_title}</h3>
-                    <div class="date">{job.dates}</div>
-                </div>
-                <div class="company-container">
-                    <div class="company">
+                    <div class="company-container">
+                        <div class="company">
+                        <div class="date">{job.dates} | </div>
                         <div class="bold">{job.company}</div>
                         <div class="light">{job.location}</div>
                     </div>
@@ -39,7 +37,7 @@
             </div>
             {#if i < experience.length - 1}
                 <hr class="thin"/>
-                {/if}
+            {/if}
         </div>
     {/each}
 <style>
