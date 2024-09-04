@@ -94,5 +94,9 @@
             display: block;
         }
 
+        .left-gap {
+            margin-left: initial;
+        }
+
     }
 </style>

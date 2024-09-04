@@ -202,13 +202,16 @@ a {
     padding: 2em 0em !important;
   }
 
-  .one-line {
-    overflow: unset;
-    white-space: unset;
-  }
-
   body {
     font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .one-line {
+    display: block;
+    overflow: auto;
+    white-space: initial;
   }
 }
 
