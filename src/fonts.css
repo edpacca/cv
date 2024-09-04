@@ -1,11 +1,11 @@
 /* Jet Brains Mono */
-@font-face {
+/* @font-face {
     font-family: "JetBrainsMono";
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-Thin.ttf");
     font-weight: 100;
     font-style: normal;
-}
-
+} */
+/*
 @font-face {
     font-family: "JetBrainsMono";
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-ThinItalic.ttf");
@@ -53,7 +53,7 @@
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic.ttf");
     font-weight: 400;
     font-style: italic;
-}
+} */
 
 @font-face {
     font-family: "JetBrainsMono";
@@ -61,13 +61,13 @@
     font-weight: 500;
     font-style: normal;
 }
-
+/*
 @font-face {
     font-family: "JetBrainsMono";
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-MediumItalic.ttf");
     font-weight: 500;
     font-style: italic;
-}
+} */
 
 @font-face {
     font-family: "JetBrainsMono";
@@ -75,7 +75,7 @@
     font-weight: 600;
     font-style: normal;
 }
-
+/*
 @font-face {
     font-family: "JetBrainsMono";
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBoldItalic.ttf");
@@ -109,10 +109,10 @@
     src: url("/assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBoldItalic.ttf");
     font-weight: 800;
     font-style: italic;
-}
+} */
 
 /* Inconsolata */
-@font-face {
+/* @font-face {
     font-family: "Inconsolata";
     src: url("/assets/fonts/Inconsolata/Inconsolata-Light.ttf");
     font-weight: 300;
@@ -138,16 +138,16 @@
     src: url("/assets/fonts/Inconsolata/Inconsolata-Bold.ttf");
     font-weight: 700;
     font-style: normal;
-}
+} */
 
 /* Roboto */
-    @font-face {
+    /* @font-face {
         font-family: "Roboto";
         src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
         font-weight: 100;
         font-style: normal;
     }
-
+ */
 
     @font-face{
         font-family: "Roboto";
@@ -163,12 +163,12 @@
         font-style: normal;
     }
 
-    @font-face{
+    /* @font-face{
         font-family: "Roboto";
         src: url("/assets/fonts/Roboto/Roboto-Medium.ttf");
         font-weight: 500;
         font-style: normal;
-    }
+    } */
 
     @font-face{
         font-family: "Roboto";
@@ -176,7 +176,7 @@
         font-weight: 700;
         font-style: normal;
     }
-
+/*
     @font-face{
         font-family: "Roboto";
         src: url("/assets/fonts/Roboto/Roboto-Black.ttf");
@@ -224,4 +224,4 @@
         src: url("/assets/fonts/Roboto/Roboto-BlackItalic.ttf");
         font-weight: 900;
         font-style: italic;
-    }
+    } */
