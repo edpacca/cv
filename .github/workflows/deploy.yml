@@ -1,12 +1,11 @@
 name: Deploy
 run-name: ${{ github.head_ref }} ${{ github.sha }}
 on:
-  push:
-    branches:
-    - main
   pull_request:
     branches:
-    - main
+      - main
+    types: [closed]
+
 
 jobs:
     deploy:
