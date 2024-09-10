@@ -14,6 +14,7 @@
 <main>
     <div class="page">
         <Header profile={data.profile}/>
+        <Portfolio urls={data.urls}/>
         <About summary={data.summary}/>
         <div class="two-col border-top border-bottom">
             <section>
