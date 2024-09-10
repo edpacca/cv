@@ -1,0 +1,36 @@
+name: Edpacca CI
+run-name: ${{ github.head_ref }} ${{ github.sha }}
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+    deploy:
+        name: deploy to github pages
+        if: ${{ github.event.pull_request.merged }}
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                ref: ${{ github.head_ref }}
+                fetch-depth: 1
+
+            - name: Set up node
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              run: npm run deploy
