@@ -8,12 +8,13 @@
     import Projects from "./lib/Projects.svelte";
     import References from "./lib/References.svelte";
     import Portfolio from "./lib/Portfolio.svelte";
-    import Interests from "./Interests.svelte";
+    import Interests from "./lib/Interests.svelte";
 </script>
 
 <main>
     <div class="page">
         <Header profile={data.profile}/>
+        <Portfolio urls={data.urls}/>
         <About summary={data.summary}/>
         <div class="two-col border-top border-bottom">
             <section>
@@ -28,22 +29,28 @@
             <Career experience={data.experience}/>
         </section>
     </div>
-    <div class="page">
+    <div class="page stretch-container page2">
+        <div class="media-only">
+            <hr/>
+        </div>
         <section>
             <Projects projects={data.projects}/>
         </section>
-        <div class="two-col border-top">
+        <div class="stretch-bottom">
+            <div class="two-col border-top border-bottom print-margin">
+                <section>
+                    <Interests interests={data.interests}/>
+                </section>
+                <div class="v-line"/>
+                <section>
+                    <References references={data.references}/>
+                </section>
+            </div>
             <section>
-                <Interests interests={data.interests}/>
-            </section>
-            <div class="v-line"/>
-            <section>
-                <References references={data.references}/>
+                <Portfolio urls={data.urls}/>
             </section>
         </div>
-        <hr/>
-        <Portfolio urls={data.urls}/>
-        </div>
+    </div>
 </main>
 
 <style>
@@ -70,12 +77,55 @@
         padding: 1em;
     }
 
-    @media print {
+    .media-only {
+        display: none;
+    }
+
+    @media print, screen and (max-width: 1024px) {
         .page {
             box-shadow: none;
             aspect-ratio: unset;
             margin: 0;
             padding: 0;
+        }
+
+        .page2 {
+            break-inside: avoid;
+        }
+
+        .stretch-container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .stretch-bottom {
+            margin-top: auto !important;
+        }
+
+        .print-margin {
+            margin-top: 2em;
+        }
+
+        .v-line {
+        border-right: 1px solid var(--light-grey);
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .media-only {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 892px) {
+        .two-col {
+            grid-template-columns: 1fr;
+        }
+
+        .v-line {
+            border-bottom: 2px solid var(--light-grey);
+            height: unset;
+            width: 100%;
         }
     }
 </style>

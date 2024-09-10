@@ -1,13 +1,14 @@
 <script>
-    import { CheckmarkFilled } from "carbon-icons-svelte";
     import Contact from "./Contact.svelte";
+    import ProfileImg from "./ProfileImg.svelte";
 
     export let profile;
-    const profileImgPath = "assets/profile2024.png"
 </script>
 
 <header>
-  <img src={profileImgPath} alt="Eddie Pace" class="profile-img"/>
+    <div class="profile-img">
+      <ProfileImg/>
+    </div>
     <div class="header-info-container">
       <div>
         <div class="header-title">
@@ -27,11 +28,6 @@
     grid-template-columns: var(--profile-img-height) 1fr;
     gap: 1em;
     margin-bottom: 1em;
-  }
-
-  .profile-img {
-    border-radius: 0.5em;
-    height: var(--profile-img-height);
   }
 
   .header-info-container {
@@ -60,6 +56,38 @@
     display: flex;
     flex-direction: column;
     gap: 0.3em;
+  }
+
+  @media screen and (max-width: 892px) {
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .profile-img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+
+    .header-info-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-title {
+      text-align: center;
+    }
+
+    .profile-img {
+      display: block;
+      margin: auto;
+    }
   }
 
 </style>

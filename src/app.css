@@ -1,3 +1,5 @@
+@import 'fonts.css';
+
 :root {
   /* Monochromes */
   --white: rgb(255, 245, 235);
@@ -37,9 +39,10 @@
   /* Other */
 	--transition-time: 0.4s;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto;
+  /* font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif; */
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   background-color: var(--bg0);
@@ -55,6 +58,11 @@
   --main-padding: 4rem;
 
   --profile-img-height: 7em;
+
+  --breakpoint-laptop: 1024px;
+  --breakpoint-tablet-l: 892px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-mobile: 480px;
 }
 
 body {
@@ -73,36 +81,11 @@ body {
   text-align: left;
 }
 
-.print-only {
-  display: none;
-}
 
-@media print {
-  .no-print {
-    display: none;
-  }
-
-  .print-only {
-    display: block;
-  }
-
-  body {
-    font-size: 12px;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-
-  #app {
-    max-width: none;
-    padding: 0;
-  }
-}
 
 h1, h2, h3, h4 {
   margin: 0;
+  font-family: JetBrainsMono;
 }
 
 h1 {
@@ -124,15 +107,12 @@ h3 {
   font-weight: 700;
   color: var(--grey);
   font-size: 1.1em;
+  font-family: Roboto;
 }
 
 ul {
   margin: 0.5rem 0em;
   padding-left: 1.5em;
-}
-
-li {
-   list-style-image: url('/src/assets/symbols/diamond-bullet.png');
 }
 
 li.none {
@@ -171,6 +151,10 @@ a {
   font-weight: 600;
 }
 
+.regular {
+  font-weight: 400;
+}
+
 .highlighted {
   color: var(--highlight);
   font-weight: bold;
@@ -199,4 +183,74 @@ a {
 
 .border-bottom {
   border-bottom: 2px solid var(--light-grey);
+}
+
+.print-only {
+  display: none;
+}
+
+@media screen and (max-width: 892px) {
+  li {
+    margin: 0.5em 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #app {
+    padding: 2em 1em !important;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  #app {
+    padding: 2em 0em !important;
+  }
+
+  body {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .one-line {
+    display: block;
+    overflow: auto;
+    white-space: initial;
+  }
+}
+
+@media print {
+  body {
+    font-size: 11px !important;
+  }
+
+  #app {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  hr {
+    margin: 0.5em 1em !important;
+    height: 1px;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .no-page-break {
+    break-inside: avoid !important;
+  }
+
+  .border-top {
+    border-top: 1px solid var(--light-grey);
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid var(--light-grey);
+  }
 }

@@ -9,8 +9,7 @@
 {#if project.published}
     <div>
         <div class="projects-header">
-            <h3>{project.name}
-            </h3>
+            <h3>{project.name}</h3>
             {#if project.year}
                 <span class="date">
                    {project.year}
@@ -22,7 +21,7 @@
             </span>
             {/if}
             {#if project.url}
-            <a href={project.url}>{project.url}</a>
+                <a href={project.url}>{project.url}</a>
             {/if}
 
         </div>
@@ -43,9 +42,32 @@
         margin-bottom: 0.5rem;
         align-items: baseline;
         gap: 0.5em;
+        flex-wrap: wrap;
     }
 
-    a {
+    a{
         margin-left: auto;
+    }
+
+    @media screen and (max-width: 892px) {
+        a {
+            width: 100%;
+            margin-top: -0.5em;
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 512px) {
+        .projects-header {
+            line-height: 0.75rem;
+        }
+
+        .one-line {
+            width: 100%;
+        }
+
+        a {
+            margin-top: 0;
+        }
     }
 </style>

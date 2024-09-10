@@ -6,12 +6,14 @@
     export let tooltipText: string;
     export let text: string;
 
+    export let isHovered: boolean;
+
     const iconPath = `assets/icons/icons.svg#${icon}`;
 </script>
 
 
-<div class="icon-link-container">
-    <Tooltip text={tooltipText}>
+<Tooltip text={tooltipText} bind:isHovered>
+    <div class="icon-link-container" class:hovered={isHovered}>
         <a href={link} target="_blank">
             <svg
                 class={$$props.class}
@@ -19,9 +21,9 @@
                 <use href={iconPath}/>
             </svg>
         </a>
-    </Tooltip>
-    <div>{text}</div>
-</div>
+        <div class="text">{text}</div>
+    </div>
+</Tooltip>
 
 <style>
     .icon-link-container {
@@ -29,6 +31,7 @@
         gap: 0.5em;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     a {
@@ -37,13 +40,30 @@
         justify-content: center;
         align-items: center;
     }
+
     svg {
-        height: 2rem;
+        height: 2em;
         transition: var(--transition-time);
         fill: var(--primary);
     }
 
-    svg:hover {
+    .hovered svg {
         fill: var(--highlight);
+    }
+
+    .hovered {
+        color: var(--highlight);
+    }
+
+    @media print {
+        svg {
+            height: 1.5em;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .text {
+            display: none;
+        }
     }
 </style>

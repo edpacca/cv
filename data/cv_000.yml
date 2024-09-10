@@ -1,5 +1,5 @@
 version: 000
-date: 2023-12-16
+date: 2024-09-10
 profile:
   name: Eddie Pace
   job_title: Software Engineer | Scientist
@@ -8,7 +8,7 @@ profile:
   address: 711 E. 6th Ave. Vancouver V5T1L7
   city: Vancouver, CA
   website: edpacca.co.uk
-summary: "Scientist turned software engineer - a highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Throughout my career I have proven myself capable of picking up new tech and rapidly becoming proficient. I enjoy building apps from scratch for personal projects. Backend programming is the most interesting to me, but I secretly like css."
+summary: "Scientist turned software engineer - a highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Throughout my career, I have proven myself capable of picking up new technologies and rapidly becoming proficient. I enjoy building apps from scratch for personal projects. Backend programming is the most interesting to me, but I secretly like CSS."
 urls:
   github: https://github.com/edpacca
   linkedIn: https://www.linkedin.com/in/edward-pace-ab88a971/
@@ -16,7 +16,7 @@ urls:
   personal: https://edpacca.co.uk
 skills:
     - Python
-    - Typescript
+    - TypeScript
     - C# .Net
     - Bash
     - Java
@@ -40,7 +40,7 @@ references:
     email: msuperina@x.com
     company: Scott Logic
 education:
-  - degree: Ph.D
+  - degree: PhD
     subject: Cond. Matter Physics
     awarding_body: University of Edinburgh
     country: UK
@@ -63,8 +63,9 @@ experience:
     location: Cambridge UK
     icon: cydar.webp
     dates: June 2023 - present
+    summary: Cydar's core is providing cloud-based visual overlays to augment and guide vascular surgery, in theatre, without requiring contrast agent to view soft tissue. Through this I have been exposed to a vast array of technologies across the stack, from backend to cloud deployment.
     notes:
-      - note: Delivered new surgical planning software from conception to release. Developed a customised widget library and was a key force in designing the frontend architecture. Also active in development of the backend code, contributing an algorithm to handle % based zoom for the 3D viewer.
+      - note: Delivered new surgical planning software from conception to release. Developed a customised widget library and was a key force in designing the frontend architecture. Also active in development of the backend code, contributing an algorithm to handle percentage based zoom for the 3D viewer.
         skills:
           - Python
           - PyQT
@@ -72,16 +73,16 @@ experience:
           - VTK
       - note: Set up CI pipeline for the In Theatre GUI application; automated complex integration tests within containerised web-driver, producing downloadable artifacts for inspection upon test failure.
         skills:
-          - Github actions
+          - Github Actions
           - Bash
           - Docker
           - Python
-          - Typescript
+          - TypeScript
           - Selenium
       - note: Contributed to development of a test harness to benchmark algorithmic identification of ROIs in CT scans, aiding in optimising the 2D/3D registration times during surgery.
         skills:
           - HTML
-          - TS
+          - TypeScript
           - Jest
       - note: Developed a Gitub-Slackbot to inform when PR merge conflicts arise from upstream changes - helped optimise the software release cycle and ease bottlenecks in the QA queue.
         skills:
@@ -117,12 +118,13 @@ experience:
     location: Edinburgh UK
     icon: scott-logic.webp
     dates: Feb 2022 - Aug 2022
+    summary: Scott Logic are a highly respected software consultancy. During my time here I gained formal training and worked as part of a large team developing scalable codebases at the enterprise level.
     notes:
       - note: Worked on a Single Sign-On (SSO) application for the Scottish Government, from POC to production; primarily in the backend implementing PKCE authentication flow to meet stringent security requirements.
         skills:
           - Java
-          - DynamoDb
-          - JS
+          - DynamoDB
+          - Javascript
           - PKCE for OAuth2
       - note: Presenting demos regularly for different groups of clients, modifying level of presentation to suit audience knowledge.
       - note: Delivered CI/CD training to graduates.
@@ -152,13 +154,13 @@ experience:
       - note: Strong writing ability demonstrated through publications as the first author in high-impact journals.
       - note: Developed excellent public speaking skills by delivering presentations to large audiences at international conferences.
 projects:
-    - name: Personal website
+    - name: Personal Website
       published: true
       url: https://edpacca.co.uk
       description: "Personal blog used to showcase all kinds of projects and art."
       tech:
         - Sveltekit
-        - Typescript
+        - TypeScript
         - Github Actions
       year: 2024
     - name: Browser based D&D Initiative Tracker
@@ -166,10 +168,10 @@ projects:
       url: https://edpacca.github.io/ednd-initiative
       tech:
         - Svelte
-        - Typescript
+        - TypeScript
       year: 2023
       description: "App designed to help manage running a game of Dungeons & Dragons - part of a full tool-suite that I am actively developing. An entirely static, but feature-rich application with data persistence (via local storage), a visual historical action log and an attractive UI."
-    - name: Dance school website
+    - name: Dance School Website
       published: true
       url: https:/fimbo-vibes.com
       tech:
@@ -181,8 +183,10 @@ projects:
       published: true
       url: https://github.com/edpacca-cydar/spotify-cmd
       year: 2022
-      description: "Bash scripted Command Line Interface leveraging the Spotify Dev API to play and manage songs and playlists."
-    - name: Full-stack Wedding App
+      description: "Bash scripted Command-line Interface leveraging the Spotify Dev API to play and manage songs and playlists."
+      tech:
+        - Bash
+    - name: Full-Stack Wedding App
       published: true
       url: https://edpacca.co.uk/wapp
       tech:
@@ -192,7 +196,7 @@ projects:
         - Docker
       year: 2022
       description: "Created a user authenticated browser app entirely from scratch, developed to enable guests at my wedding to manage meal choices, report arrival dates, find their seats and access the itinerary. The stack was launched with Docker-compose, using a reverse proxy to orchestrate traffic. \"Wapp\" effectively aided us in organising and managing our wedding."
-    - name: Wizard Grenade 2D game
+    - name: Wizard Grenade 2D Game
       published: true
       url: https://edpacca.co.uk/wizard-grenade
       tech:
