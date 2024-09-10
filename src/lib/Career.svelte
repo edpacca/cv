@@ -24,6 +24,11 @@
                 </div>
             </div>
             <div>
+                {#if job.summary}
+                    <div>
+                        {job.summary}
+                    </div>
+                {/if}
                 <ul>
                     {#each job.notes as description}
                         <li>{description.note}
