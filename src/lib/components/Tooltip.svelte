@@ -28,6 +28,7 @@
 </script>
 
 <div
+	role="tooltip"
 	on:mouseover={mouseOver}
 	on:mouseleave={mouseLeave}
 	on:mousemove={mouseMove}
@@ -40,7 +41,7 @@
 	<div
 		style="top: {y}px; left: {x}px;"
 		class="tooltip"
-		in:fade={{delay: 800}}>
+		in:fade={{delay: 300}}>
 		{text}
 	</div>
 {/if}
