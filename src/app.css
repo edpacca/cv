@@ -151,6 +151,10 @@ a {
   font-weight: 600;
 }
 
+.regular {
+  font-weight: 400;
+}
+
 .highlighted {
   color: var(--highlight);
   font-weight: bold;
