@@ -169,6 +169,10 @@ a {
   margin-top: -0.2rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .info-line {
   display: flex;
   flex-direction: row;
@@ -254,3 +258,6 @@ a {
     border-bottom: 1px solid var(--light-grey);
   }
 }
+    .italic {
+       font-style: italic;
+    }

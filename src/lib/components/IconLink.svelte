@@ -6,7 +6,7 @@
     export let tooltipText: string;
     export let text: string;
 
-    export let isHovered: boolean;
+    let isHovered: boolean;
 
     const iconPath = `assets/icons/icons.svg#${icon}`;
 </script>
