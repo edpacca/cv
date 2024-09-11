@@ -1,5 +1,5 @@
 name: Deploy
-run-name: ${{ github.head_ref }} ${{ github.sha }}
+run-name: Deployment from ${{ github.head_ref }}
 on:
   pull_request:
     branches:
@@ -15,15 +15,15 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               with:
                 ref: ${{ github.head_ref }}
                 fetch-depth: 1
 
             - name: Set up node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                node-version: 18
+                node-version: 20
 
             - name: Install Dependencies
               run: npm install

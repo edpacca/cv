@@ -13,7 +13,7 @@ def main():
     input_dir = "./data/"
     output_dir = "./src/data"
 
-    with open(f"{input_dir}/cv_000.yml") as input_file:
+    with open(f"{input_dir}/cv_001.yml") as input_file:
         data = yaml.safe_load(input_file)
 
     with open(f"{output_dir}/cv.json", "w") as output_file:
