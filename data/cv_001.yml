@@ -157,7 +157,7 @@ projects:
     - name: Personal Website
       published: true
       url: https://edpacca.co.uk
-      description: "Personal blog used to showcase all kinds of projects and art."
+      description: "Personal portfolio of coding projects and other hobbies. Uses SSR and features several fun widgets including a mini 2D physics engine and a library for drawing complex shapes in the HTML canvas."
       tech:
         - Sveltekit
         - TypeScript
@@ -171,14 +171,14 @@ projects:
         - TypeScript
       year: 2023
       description: "App designed to help manage running a game of Dungeons & Dragons - part of a full tool-suite that I am actively developing. An entirely static, but feature-rich application with data persistence (via local storage), a visual historical action log and an attractive UI."
-    - name: Dance School Website
+    - name: Free Website with CMS
       published: true
-      url: https:/fimbo-vibes.com
+      url: https://amazing-fairy-5e81f2.netlify.app/
       tech:
         - Hugo
         - Netlify CMS
       year: 2023
-      description: "Helped a small dance company from Uganda to launch a simple website, that could be easily updated with only minimal computer literacy. The website is hosted for free on Github Pages and utilizes Netlify for user-authenticated content management."
+      description: "Helped a small dance company from Uganda save money by building a free website, with content and a timetable that could be easily managed with minimal computer literacy. The website is hosted  on Github Pages and utilizes Netlify for user-authenticated content management."
     - name: Spotify CLI
       published: true
       url: https://github.com/edpacca-cydar/spotify-cmd
