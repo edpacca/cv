@@ -6,7 +6,6 @@
 <div class="portfolio">
     <IconLink icon={"github"} link={urls.github} text={"edpacca"} tooltipText={"Github"}/>
     <IconLink icon={"linkedin"} link={urls.LinkedIn} text={"edwardjpace"} tooltipText={"LinkedIn"}/>
-    <IconLink icon={"research-gate"} link={urls.researchGate} text={"Edward-Pace-2"} tooltipText={"Research-gate"}/>
     <IconLink icon={"ep-logo"} link={urls.personal} text={"edpacca.co.uk"} tooltipText={"Personal Website"}/>
   </div>
 

@@ -211,3 +211,34 @@ interests:
   - board games
   - Muay-Thai
   - coffee...
+publications:
+  - title: Structural phase transitions in yttrium up to 183 GPa
+    authors: E. J. Pace
+    doi: 10.1103/PhysRevB.102.094104
+    link: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.094104
+    date: Sept 2020
+    journal: Physical Review B
+    ref: Phys. Rev. B 102, 094104
+  - title: Properties and Phase Diagram of (H2S)2H2
+    authors: E. J. Pace
+    doi: 10.1103/PhysRevB.101.174511
+    link: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.174511
+    date: May 2020
+    journal: Physical Review B
+    ref: Phys. Rev. B 101, 174511
+  - title: Intense Reactivity in Sulfur-Hydrogen Mixtures at High Pressure under X-ray Irradiation
+    authors: E. J. Pace
+    doi: 10.1021/acs.jpclett.9b03797
+    link: https://pubs.acs.org/doi/10.1021/acs.jpclett.9b03797
+    date: Feb 2020
+    journal: The Journal of Physical Chemistry Letters
+    ref: J. Phys. Chem. Lett. 11, 5, 1828-1834
+  - title: Synthesis and stability of hydrogen selenide compounds at high pressure
+    authors: E. J. Pace
+    doi: 10.1063/1.5004242
+    link: https://pubs.aip.org/aip/jcp/article-abstract/147/18/184303/195414/Synthesis-and-stability-of-hydrogen-selenide
+    date: Nov 2017
+    journal: The Journal of Chemical Physics
+    ref: J. Chem. Phys. 147, 184303
+
+

@@ -9,6 +9,7 @@
     import References from "./lib/References.svelte";
     import Portfolio from "./lib/Portfolio.svelte";
     import Interests from "./lib/Interests.svelte";
+    import Publications from "./lib/Publications.svelte";
 </script>
 
 <main>
@@ -47,7 +48,7 @@
                 </section>
             </div>
             <section>
-                <Portfolio urls={data.urls}/>
+                <Publications publications={data.publications} rg_url={data.urls.researchGate}/>
             </section>
         </div>
     </div>
