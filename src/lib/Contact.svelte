@@ -7,12 +7,20 @@
 <div class="info-line">
   <Email size={24} class="icon no-print"/>
   <Email size={16} class="icon print-only"/>
-  <div>{profile.email}</div>
-</div >
+  {#if import.meta.env.DEV}
+    <div>{profile.email}</div>
+  {:else}
+    <div>-</div>
+  {/if}
+</div>
 <div class="info-line">
   <PhoneVoice size={24} class="icon no-print"/>
   <PhoneVoice size={16} class="icon print-only"/>
-  <div>{profile.phone}</div>
+  {#if import.meta.env.DEV}
+    <div>{profile.phone}</div>
+  {:else}
+    <div>-</div>
+  {/if}
 </div>
 <div class="info-line">
   <LocationFilled size={24} class="icon no-print"/>
