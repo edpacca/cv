@@ -3,7 +3,7 @@
   "date": "2024-09-10",
   "profile": {
     "name": "Eddie Pace",
-    "job_title": "Full-Stack Software Engineer",
+    "job_title": "Senior Software Engineer",
     "email": "edwardjpace@gmail.com",
     "phone": "640-671-5450",
     "address": "711 E. 6th Ave. Vancouver V5T1L7",
@@ -82,10 +82,10 @@
       "location": "Cambridge UK",
       "icon": "cydar.webp",
       "dates": "June 2023 - present",
-      "summary": "Cydar uses machine learning to generate 3D models of the aorta from CT scans, overlayed on xray video streams, updating in real time to guide live vascular surgeries. This job requires deep knowledge in many areas from server-side APIs, backend optimisation, frontend engineering to UX specifications and handling cloud deployments.",
+      "summary": "Cydar uses machine learning to generate 3D models of the aorta from CT scans, overlaied on xray video streams, updating in real time to guide live vascular surgeries. This job requires deep knowledge in many areas from server-side APIs, backend optimisation, frontend engineering to UX specifications and handling cloud deployments.",
       "notes": [
         {
-          "note": "A key player in delivering new surgical planning software from conception to users. Designed and archicted frontend codebase, handled interface between python and c++ code, contributed an algorithm to handle percentage based zoom for the 3D viewer, worked closely with UX stakeholders.",
+          "note": "A key player in delivering new surgical planning software from conception to users. Designed and architected frontend codebase, handled interface between python and c++ code, contributed an algorithm to handle percentage based zoom for the 3D viewer, worked closely with UX stakeholders.",
           "skills": [
             "Python",
             "C++"
@@ -168,20 +168,21 @@
           "note": "Worked on a Single Sign-On (SSO) application for the Scottish Government, from POC to production; primarily in the backend implementing PKCE authentication flow to meet stringent security requirements.",
           "skills": [
             "Java",
+            "SpringBoot",
             "DynamoDB",
             "Javascript",
             "PKCE for OAuth2"
           ]
         },
         {
-          "note": "Presenting demos regularly for different groups of clients, modifying level of presentation to suit audience knowledge."
-        },
-        {
-          "note": "Delivered CI/CD training to graduates.",
+          "note": "Delivered CI/CD training to graduates; automated build and deployment of application using infrastructure as code.",
           "skills": [
             "Terraform",
             "AWS"
           ]
+        },
+        {
+          "note": "Presenting demos regularly for different groups of clients, modifying level of presentation to suit audience knowledge."
         }
       ]
     },
@@ -193,7 +194,15 @@
       "dates": "Aug 2021 - Feb 2022",
       "notes": [
         {
-          "note": "Acknowledged for rapid development, transitioned to a client project ahead of schedule (SSO ScotGov - see above)."
+          "note": "Acknowledged for rapid development, transitioned to a client project ahead of schedule then promoted (SSO ScotGov - see above)."
+        },
+        {
+          "note": "Rapidly developed and deployed working prototype with PKCE authentication server for SSO project.",
+          "skills": [
+            "C#",
+            "ASP.Net",
+            "AWS"
+          ]
         },
         {
           "note": "Worked with a large team of graduates on an internal project, showcasing effective communication and leadership skills in coordinating the group.",
@@ -296,7 +305,7 @@
         "XNA Framework"
       ],
       "year": 2020,
-      "description": "First major project undertaken to learn Object-Oriented Programming.  Fully functional local multiplayer game developed entirely from scratch from a simple render loop - featuring a custom physics engine, unique artwork and music."
+      "description": "First major project undertaken to learn Object-Oriented Programming and implement design patterns. Took time to create a well-crafted and extensible game library from scratch, to build a fully functional local multiplayer from a simple render loop - featuring a custom physics engine, unique artwork and music."
     }
   ],
   "interests": [
