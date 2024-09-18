@@ -3,16 +3,17 @@
   "date": "2024-09-10",
   "profile": {
     "name": "Eddie Pace",
-    "job_title": "Software Engineer | Scientist",
-    "email": "-",
-    "phone": "-",
-    "address": "-",
+    "job_title": "Senior Software Engineer",
+    "email": "edwardjpace@gmail.com",
+    "phone": "640-671-5450",
+    "address": "711 E. 6th Ave. Vancouver V5T1L7",
     "city": "Vancouver, CA",
     "website": "edpacca.co.uk"
   },
-  "summary": "Scientist turned software engineer - a highly adaptable full-stack developer with a record of delivering professional software across a spectrum of languages and stacks. Throughout my career, I have proven myself capable of picking up new technologies and rapidly becoming proficient. I enjoy building apps from scratch for personal projects. Backend programming is the most interesting to me, but I secretly like CSS.",
+  "summary": "A highly adaptable full-stack developer with a record of delivering professional software and problem solving at every level of the stack. Experienced in maintaining complex codebases and architecting projects from the ground up. Proficient in handling and analysing datasets from physics career.",
   "urls": {
     "github": "https://github.com/edpacca",
+    "github2": "https://github.com/edpacca-cydar",
     "linkedIn": "https://www.linkedin.com/in/edwardjpace/",
     "researchGate": "https://researchgate.net/profile/Edward-Pace-2",
     "personal": "https://edpacca.co.uk"
@@ -21,17 +22,18 @@
     "Python",
     "TypeScript",
     "C# .Net",
-    "Bash",
     "Java",
     "Docker",
-    "Git",
+    "Bash",
+    "SSH",
     "C++",
     "Svelte",
-    "PyQT",
     "React",
+    "CSS",
+    "HTML",
     "AWS",
+    "Git",
     "Linux",
-    "Vim",
     "Agile"
   ],
   "references": [
@@ -80,19 +82,17 @@
       "location": "Cambridge UK",
       "icon": "cydar.webp",
       "dates": "June 2023 - present",
-      "summary": "Cydar's core is providing cloud-based visual overlays to augment and guide vascular surgery, in theatre, without requiring contrast agent to view soft tissue. Through this I have been exposed to a vast array of technologies across the stack, from backend to cloud deployment.",
+      "summary": "Cydar uses machine learning to generate 3D models of the aorta from CT scans, overlaied on xray video streams, updating in real time to guide live vascular surgeries. This job requires deep knowledge in many areas from server-side APIs, backend optimisation, frontend engineering to UX specifications and handling cloud deployments.",
       "notes": [
         {
-          "note": "Delivered new surgical planning software from conception to release. Developed a customised widget library and was a key force in designing the frontend architecture. Also active in development of the backend code, contributing an algorithm to handle percentage based zoom for the 3D viewer.",
+          "note": "A key player in delivering new surgical planning software from conception to users. Designed and architected frontend codebase, handled interface between python and c++ code, contributed an algorithm to handle percentage based zoom for the 3D viewer, worked closely with UX stakeholders.",
           "skills": [
             "Python",
-            "PyQT",
-            "C++",
-            "VTK"
+            "C++"
           ]
         },
         {
-          "note": "Set up CI pipeline for the In Theatre GUI application; automated complex integration tests within containerised web-driver, producing downloadable artifacts for inspection upon test failure.",
+          "note": "Worked alone to set up new CI pipeline for the In Theatre GUI application; automated complex integration tests within containerised web-driver improving reliability and 100% decrease in CI run time.",
           "skills": [
             "Github Actions",
             "Bash",
@@ -103,7 +103,7 @@
           ]
         },
         {
-          "note": "Contributed to development of a test harness to benchmark algorithmic identification of ROIs in CT scans, aiding in optimising the 2D/3D registration times during surgery.",
+          "note": "Developed a custom test harness to benchmark algorithmic identification of ROIs in CT scans, aiding in optimising the 2D/3D algorithmic registration times during surgery.",
           "skills": [
             "HTML",
             "TypeScript",
@@ -128,27 +128,27 @@
       "dates": "Aug 2022 - June 2023",
       "notes": [
         {
-          "note": "Quickly learned brand new technologies in order to begin contributing to the codebase.",
+          "note": "Daily use of modern and obscure technlogies, contributing to all the core repos. Time-critical triaging of bugs experienced by users, using SSH connection to fix issues on live servers.",
           "skills": [
-            "Ubuntu",
+            "Bash",
             "Python",
+            "TypeScript",
             "Django",
-            "Svelte",
-            "PyQt"
+            "React/Svelte"
           ]
         },
         {
-          "note": "Rebuilt the entire frontend for the 'ITG', an extremely complex state dependent application used by surgeons during operations. A solo project which demonstrates my ability to digest an unfamiliar codebase, identify issues and produce a robust, reactive and extensible application.",
+          "note": "Rebuilt the entire frontend for the 'ITG', a highly complex, state dependent browser application used by surgeons during operations. A solo project which demonstrates my ability to digest an unfamiliar codebase, identify issues and produce a robust, reactive and extensible application.",
           "skills": [
-            "Svelte",
-            "TS",
+            "React/Svelte",
+            "TypeScript",
             "Redux",
             "Django",
             "Python"
           ]
         },
         {
-          "note": "Delivered new pre-op planning tools for a partner company; had to diplomatically negotiate with demanding client, compromising on the most effective solution for all parties.",
+          "note": "Delivered unique planning feature for partner company. Worked with demanding stakeholders to tight deadline.",
           "skills": [
             "Python",
             "PyQT"
@@ -168,20 +168,21 @@
           "note": "Worked on a Single Sign-On (SSO) application for the Scottish Government, from POC to production; primarily in the backend implementing PKCE authentication flow to meet stringent security requirements.",
           "skills": [
             "Java",
+            "SpringBoot",
             "DynamoDB",
             "Javascript",
             "PKCE for OAuth2"
           ]
         },
         {
-          "note": "Presenting demos regularly for different groups of clients, modifying level of presentation to suit audience knowledge."
-        },
-        {
-          "note": "Delivered CI/CD training to graduates.",
+          "note": "Delivered CI/CD training to graduates; automated build and deployment of application using infrastructure as code.",
           "skills": [
             "Terraform",
             "AWS"
           ]
+        },
+        {
+          "note": "Presenting demos regularly for different groups of clients, modifying level of presentation to suit audience knowledge."
         }
       ]
     },
@@ -193,7 +194,15 @@
       "dates": "Aug 2021 - Feb 2022",
       "notes": [
         {
-          "note": "Acknowledged for rapid development, transitioned to a client project ahead of schedule (SSO ScotGov - see above)."
+          "note": "Acknowledged for rapid development, transitioned to a client project ahead of schedule then promoted (SSO ScotGov - see above)."
+        },
+        {
+          "note": "Rapidly developed and deployed working prototype with PKCE authentication server for SSO project.",
+          "skills": [
+            "C#",
+            "ASP.Net",
+            "AWS"
+          ]
         },
         {
           "note": "Worked with a large team of graduates on an internal project, showcasing effective communication and leadership skills in coordinating the group.",
@@ -229,10 +238,10 @@
   ],
   "projects": [
     {
-      "name": "Personal Website",
+      "name": "Portfolio site",
       "published": true,
       "url": "https://edpacca.co.uk",
-      "description": "Personal portfolio of coding projects and other hobbies. Uses SSR and features several fun widgets including a mini 2D physics engine and a library for drawing complex shapes in the HTML canvas.",
+      "description": "Personal portfolio using modern JavaScript framework to highlight coding projects and other hobbies. Uses SSR and features several fun widgets including a mini 2D physics engine and a library for drawing complex shapes in the HTML canvas.",
       "tech": [
         "Sveltekit",
         "TypeScript",
@@ -269,7 +278,8 @@
       "year": 2022,
       "description": "Bash scripted Command-line Interface leveraging the Spotify Dev API to play and manage songs and playlists.",
       "tech": [
-        "Bash"
+        "Bash",
+        "RESTful APIs"
       ]
     },
     {
@@ -280,10 +290,11 @@
         "React/Redux",
         "Express",
         "MongoDb",
-        "Docker"
+        "Docker",
+        "RESTful APIs"
       ],
       "year": 2022,
-      "description": "Created a user authenticated browser app entirely from scratch, developed to enable guests at my wedding to manage meal choices, report arrival dates, find their seats and access the itinerary. The stack was launched with Docker-compose, using a reverse proxy to orchestrate traffic. \"Wapp\" effectively aided us in organising and managing our wedding."
+      "description": "Created a user authenticated browser app, with an authentication server and database entirely from scratch, developed to enable guests at my wedding to manage meal choices, report arrival dates, find their seats and access the itinerary. The stack was launched with Docker-compose, using a reverse proxy to orchestrate traffic. \"Wapp\" effectively aided us in organising and managing our wedding."
     },
     {
       "name": "Wizard Grenade 2D Game",
@@ -294,7 +305,7 @@
         "XNA Framework"
       ],
       "year": 2020,
-      "description": "First major project undertaken to learn Object-Oriented Programming.  Fully functional local multiplayer game developed entirely from scratch from a simple render loop - featuring a custom physics engine, unique artwork and music."
+      "description": "First major project undertaken to learn Object-Oriented Programming and implement design patterns. Took time to create a well-crafted and extensible game library from scratch, to build a fully functional local multiplayer from a simple render loop - featuring a custom physics engine, unique artwork and music."
     }
   ],
   "interests": [

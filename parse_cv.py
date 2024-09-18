@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import os
+from dotenv import load_dotenv
 from jsonschema import validate
 import yaml
 import json
@@ -10,10 +12,13 @@ def DateEncoder(obj):
 
 def main():
 
-    input_dir = "./data/"
+    load_dotenv()
+    input_dir = os.getenv("CV_DATA_DIR")
+    input_file = os.getenv("CV_FILE")
+    print(input_file)
     output_dir = "./src/data"
 
-    with open(f"{input_dir}/cv_001.yml") as input_file:
+    with open(f"{input_dir}/{input_file}") as input_file:
         data = yaml.safe_load(input_file)
 
     with open(f"{output_dir}/cv.json", "w") as output_file:

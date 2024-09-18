@@ -26,3 +26,5 @@ env/
 __pycache__
 
 data/
+cv-data/
+.env
