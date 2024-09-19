@@ -15,8 +15,10 @@
             {pub.title}
         </div>
         <div class="flex-line">
-            <div class="italic">{pub.ref}</div>
-            <div class="bold">{pub.date}</div>
+            <div class="flex-mobile">
+                <div class="italic">{pub.ref}</div>
+                <div class="bold">{pub.date}</div>
+            </div>
             <a href={pub.link}>{pub.doi}</a>
         </div>
     </div>
@@ -35,6 +37,22 @@
     .flex-line {
         display: flex;
         gap: 0.5em;
+    }
+
+    .flex-mobile {
+        display: flex;
+        gap: 0.5em;
+    }
+
+    @media screen and (max-width: 700px) {
+        .flex-line {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .flex-mobile {
+            flex-direction: row;
+        }
     }
 
 </style>
