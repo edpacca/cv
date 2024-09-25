@@ -1,6 +1,6 @@
 <script>
     export let extraClass = ""
-   const profileImgPath = "assets/profile2024.png"
+   const profileImgPath = "assets/profile2024_small.png"
 </script>
 
 
