@@ -1,12 +1,12 @@
 {
-  "version": 0,
-  "date": "2024-09-10",
+  "version": 3,
+  "date": "2024-09-25",
   "profile": {
     "name": "Eddie Pace",
     "job_title": "Full-Stack Software Engineer",
     "email": "edwardjpace@gmail.com",
-    "phone": "640-671-5450",
-    "address": "711 E. 6th Ave. Vancouver V5T1L7",
+    "phone": "",
+    "address": "",
     "city": "Vancouver, CA",
     "website": "edpacca.co.uk"
   },
@@ -40,13 +40,13 @@
     {
       "name": "Cal Bryant",
       "position": "Head of Engineering",
-      "email": "cal.bryant@cydar.co.uk",
+      "email": "",
       "company": "Cydar Medical"
     },
     {
       "name": "Marzio Superina",
       "position": "Project lead",
-      "email": "msuperina@x.com",
+      "email": "",
       "company": "Scott Logic"
     }
   ],
@@ -310,6 +310,7 @@
   ],
   "interests": [
     "Playing music",
+    "Dungeons & Dragons",
     "camping",
     "miniature painting",
     "board games",

@@ -25,6 +25,6 @@ dist-ssr
 env/
 __pycache__
 
-data/
+./data/
 cv-data/
 .env
