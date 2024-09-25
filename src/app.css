@@ -238,6 +238,11 @@ a {
     height: 1px;
   }
 
+  hr.thin {
+    border-top: 1px solid var(--very-light-grey) !important;
+    margin: 1rem 1rem !important;
+  }
+
   .no-print {
     display: none !important;
   }
@@ -258,6 +263,3 @@ a {
     border-bottom: 1px solid var(--light-grey);
   }
 }
-    .italic {
-       font-style: italic;
-    }
