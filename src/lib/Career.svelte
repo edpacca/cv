@@ -2,6 +2,7 @@
     import { stringList } from "./utils";
 
     export let experience;
+
 </script>
 
 <h2>Experience</h2>
@@ -25,16 +26,19 @@
             </div>
             <div>
                 {#if job.summary}
-                    <div>
+                    <div class="italic">
                         {job.summary}
                     </div>
                 {/if}
                 <ul>
                     {#each job.notes as description}
                         <li>{description.note}
+                            {#if description.shipped}
+                                (<strong>{description.product} - SHIPPED</strong>)
+                            {/if}
                             {#if description.skills}
-                            <span class="highlighted one-line left-gap">
-                                {stringList(description.skills, "|")}
+                            <span class="highlighted one-line">
+                                {stringList(description.skills)}
                             </span>
                             {/if}
                         </li>
@@ -51,6 +55,7 @@
     .employment-header {
         display: grid;
         grid-template-columns: 1fr auto auto;
+        margin-bottom: 0.5em;
     }
 
     .company-container {
@@ -62,10 +67,6 @@
 
     .company-logo {
         height: 2em;
-    }
-
-    .left-gap {
-        margin-left: 0.5rem;
     }
 
     .show-512 {
@@ -97,10 +98,6 @@
 
         .show-512 {
             display: block;
-        }
-
-        .left-gap {
-            margin-left: initial;
         }
 
     }
