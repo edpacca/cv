@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "date": "2024-09-25",
+  "date": "2024-10-28",
   "profile": {
     "name": "Eddie Pace",
     "job_title": "Full-Stack Software Engineer",
@@ -81,15 +81,17 @@
       "company": "Cydar Medical",
       "location": "Cambridge UK",
       "icon": "cydar.webp",
-      "dates": "June 2023 - present",
-      "summary": "Cydar uses machine learning to generate 3D models of the aorta from CT scans, overlaied on xray video streams, updating in real time to guide live vascular surgeries. This job requires deep knowledge in many areas from server-side APIs, backend optimisation, frontend engineering to UX specifications and handling cloud deployments.",
+      "dates": "June 2023 - Oct 2024",
+      "summary": "Cydar are a medical imaging startup; 3D deformation models of the heart are generated from CT scans, overlaid onto xray video streams and updated in real time to guide surgical operations.",
       "notes": [
         {
-          "note": "A key player in delivering new surgical planning software from conception to users. Designed and architected frontend codebase, handled interface between python and c++ code, contributed an algorithm to handle percentage based zoom for the 3D viewer, worked closely with UX stakeholders.",
+          "note": "Delivered new surgical planning software from concept. Designed and architected frontend codebase, proposed and implemented new coding standards, managed interface layer between python and c++ backend code. Contributed an original algorithm to handle percentage based zoom on 3D model.",
           "skills": [
             "Python",
             "C++"
-          ]
+          ],
+          "product": "Cydar Maps",
+          "shipped": true
         },
         {
           "note": "Worked alone to set up new CI pipeline for the In Theatre GUI application; automated complex integration tests within containerised web-driver improving reliability and 100% decrease in CI run time.",
@@ -111,7 +113,7 @@
           ]
         },
         {
-          "note": "Developed a Gitub-Slackbot to inform when PR merge conflicts arise from upstream changes - helped optimise the software release cycle and ease bottlenecks in the QA queue.",
+          "note": "Developed a Github-Slackbot to inform when PR merge conflicts arise from upstream changes - helped optimise the software release cycle and ease bottlenecks in the QA queue.",
           "skills": [
             "Bash",
             "Github Actions",
@@ -128,13 +130,13 @@
       "dates": "Aug 2022 - June 2023",
       "notes": [
         {
-          "note": "Daily use of modern and obscure technlogies, contributing to all the core repos. Time-critical triaging of bugs experienced by users, using SSH connection to fix issues on live servers.",
+          "note": "Time-critical triaging of bugs reported by users. Debugging backend code to identify source of issues, patching live servers where necessary.",
           "skills": [
-            "Bash",
             "Python",
-            "TypeScript",
             "Django",
-            "React/Svelte"
+            "Linux",
+            "SSH",
+            "DevOps"
           ]
         },
         {
@@ -145,13 +147,16 @@
             "Redux",
             "Django",
             "Python"
-          ]
+          ],
+          "shipped": true,
+          "product": "Guide"
         },
         {
-          "note": "Delivered unique planning feature for partner company. Worked with demanding stakeholders to tight deadline.",
+          "note": "Enhanced backend services - Improved DICOM image sorting algorithm to ensure correct stacking order. Deployed test cloud to test interaction with other micro-services.",
           "skills": [
             "Python",
-            "PyQT"
+            "Django",
+            "AWS"
           ]
         }
       ]
@@ -165,7 +170,7 @@
       "summary": "Scott Logic are a highly respected software consultancy. During my time here I gained formal training and worked as part of a large team developing scalable codebases at the enterprise level.",
       "notes": [
         {
-          "note": "Worked on a Single Sign-On (SSO) application for the Scottish Government, from POC to production; primarily in the backend implementing PKCE authentication flow to meet stringent security requirements.",
+          "note": "Worked from POC to production on a Single Sign-On (SSO) application for the Scottish Government. Focused on the backend implementing PKCE authentication flow to meet stringent security requirements.",
           "skills": [
             "Java",
             "SpringBoot",
@@ -194,9 +199,6 @@
       "dates": "Aug 2021 - Feb 2022",
       "notes": [
         {
-          "note": "Acknowledged for rapid development, transitioned to a client project ahead of schedule then promoted (SSO ScotGov - see above)."
-        },
-        {
           "note": "Rapidly developed and deployed working prototype with PKCE authentication server for SSO project.",
           "skills": [
             "C#",
@@ -205,11 +207,11 @@
           ]
         },
         {
-          "note": "Worked with a large team of graduates on an internal project, showcasing effective communication and leadership skills in coordinating the group.",
+          "note": "Learned to value teamwork collaborating with large group of graduates on internal project.",
           "skills": [
-            "React/Redux",
+            "Communication",
             "Java",
-            "SpringBoot"
+            "React/Redux"
           ]
         }
       ]
@@ -250,6 +252,18 @@
       "year": 2024
     },
     {
+      "name": "In Theatre GUI - Cydar Medical",
+      "published": true,
+      "url": "https://cydarmedical.com/guide/",
+      "year": 2023,
+      "tech": [
+        "Svelte",
+        "Typescript",
+        "Redux"
+      ],
+      "description": "Tasked with rebuilding the entire frontend for real time surgical guidance application; implemnting new UX design using a brand new frontend framework to replace pure JS. Had to fully read and understand the existing application which used Redux to manage complex state dependent transitions, and websockets to send and recieve processed data from cloud based GPUs severs. A key challenge was figuring out how to expose and connect the Redux store to the Svelte store so Svelte components could subscribe to state changes. I architected and structured the entire JS/TS component library and rebuilt the product from the ground up. The result is a highly extensible, readable and testable codebase; the application is a medical device and is used by surgeons during operations to save lives."
+    },
+    {
       "name": "Browser based D&D Initiative Tracker",
       "published": true,
       "url": "https://edpacca.github.io/ednd-initiative",
@@ -262,7 +276,7 @@
     },
     {
       "name": "Free Website with CMS",
-      "published": true,
+      "published": false,
       "url": "https://amazing-fairy-5e81f2.netlify.app/",
       "tech": [
         "Hugo",
@@ -294,7 +308,7 @@
         "RESTful APIs"
       ],
       "year": 2022,
-      "description": "Created a user authenticated browser app, with an authentication server and database entirely from scratch, developed to enable guests at my wedding to manage meal choices, report arrival dates, find their seats and access the itinerary. The stack was launched with Docker-compose, using a reverse proxy to orchestrate traffic. \"Wapp\" effectively aided us in organising and managing our wedding."
+      "description": "A MERN stack app created entirely from scratch, launched and deployed as microservices with security in mind, using a reverse proxy to orchestrate traffic. Backend authentication server validates user and authorizes client session via cookies. Enables wedding to guests manage meal choices, report arrival dates, find their seats and access the itinerary. \"Wapp\" effectively aided us in organising and managing our wedding."
     },
     {
       "name": "Wizard Grenade 2D Game",
@@ -310,7 +324,6 @@
   ],
   "interests": [
     "Playing music",
-    "Dungeons & Dragons",
     "camping",
     "miniature painting",
     "board games",
