@@ -91,7 +91,7 @@
         }
 
         .page2 {
-            break-inside: avoid;
+            /* break-inside: avoid; */
         }
 
         .stretch-container {

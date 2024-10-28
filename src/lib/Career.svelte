@@ -17,11 +17,13 @@
                         <div class="date hide-512">{job.dates} |</div>
                         <div class="bold">{job.company}</div>
                         <div class="light">{job.location}</div>
+                    {#if job.icon}
                     <img
                         src={`assets/icons/${job.icon}`}
                         alt={`${job.company} logo`}
                         class="company-logo"
                     />
+                    {/if}
                 </div>
             </div>
             <div>
