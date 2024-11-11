@@ -1,10 +1,12 @@
 <script>
     export let extraClass = ""
    const profileImgPath = "assets/profile2024_small.png"
+   const testImgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/500px-Square_-_black_simple.svg.png"
 </script>
 
 
-<img src={profileImgPath} alt="Eddie Pace" class="profile-img {extraClass}"/>
+<!-- <img src={profileImgPath} alt="Eddie Pace" class="profile-img {extraClass}"/> -->
+<img src={testImgPath} alt="square" class="profile-img {extraClass}"/>
 
 <style>
     .profile-img {

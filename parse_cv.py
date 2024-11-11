@@ -8,6 +8,7 @@ import json
 import datetime
 
 valid_words = [
+    "app",
     "frontend",
     "backend",
     "3d",
@@ -80,8 +81,8 @@ def main():
     with open(f"{input_dir}/{input_file}") as input_file:
         data = yaml.safe_load(input_file)
 
-    validate_information(data)
-    validate_spelling(data)
+    # validate_information(data)
+    # validate_spelling(data)
 
     with open(f"{output_dir}/cv.json", "w") as output_file:
         output_file.write(json.dumps(data, indent=2, default=DateEncoder))

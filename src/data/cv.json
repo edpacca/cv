@@ -1,52 +1,47 @@
 {
-  "version": 3,
-  "date": "2024-10-28",
+  "version": "microsoft SEII",
+  "date": "2024-11-08",
   "profile": {
-    "name": "Eddie Pace",
-    "job_title": "Full-Stack Software Engineer",
-    "email": "edwardjpace@gmail.com",
-    "phone": "",
+    "name": "Jedward Prince",
+    "job_title": "Software Engineer",
+    "email": "jprince@gmail.com",
+    "phone": "630-613-5150",
     "address": "",
-    "city": "Vancouver, CA",
-    "website": "edpacca.co.uk"
+    "city": "Denver, CO",
+    "website": "jedward.co.uk"
   },
-  "summary": "A highly adaptable full-stack developer with a record of delivering professional software and problem solving at every level of the stack. Experienced in maintaining complex codebases and architecting projects from the ground up. Proficient in handling and analysing datasets from physics career.",
+  "summary": "A highly adaptable full-stack developer with a record of delivering professional software and problem solving at every level of the stack. Experienced in maintaining complex codebases and architecting projects from the ground up. Proficient in handling and analyzing datasets from physics career.",
   "urls": {
-    "github": "https://github.com/edpacca",
-    "github2": "https://github.com/edpacca-cydar",
-    "linkedIn": "https://www.linkedin.com/in/edwardjpace/",
-    "researchGate": "https://researchgate.net/profile/Edward-Pace-2",
-    "personal": "https://edpacca.co.uk"
+    "github": "https://github.com/jedward",
+    "linkedIn": "https://www.linkedin.com/in/jedward/",
+    "researchGate": "https://researchgate.net/profile/jedwar-2",
+    "personal": "https://jedward.co.uk"
   },
   "skills": [
     "Python",
     "TypeScript",
+    "JavaScript",
     "C# .Net",
-    "Java",
-    "Docker",
-    "Bash",
-    "SSH",
     "C++",
-    "Svelte",
+    "Java",
     "React",
-    "CSS",
-    "HTML",
-    "AWS",
+    "Docker",
     "Git",
+    "AWS",
     "Linux",
     "Agile"
   ],
   "references": [
     {
-      "name": "Cal Bryant",
+      "name": "Colt Bryno",
       "position": "Head of Engineering",
-      "email": "",
+      "email": "colt.bryno@cydar.co.uk",
       "company": "Cydar Medical"
     },
     {
-      "name": "Marzio Superina",
+      "name": "Maruzo Spenderi",
       "position": "Project lead",
-      "email": "",
+      "email": "maruzospendero@email.com",
       "company": "Scott Logic"
     }
   ],
@@ -94,7 +89,7 @@
           "shipped": true
         },
         {
-          "note": "Worked alone to set up new CI pipeline for the In Theatre GUI application; automated complex integration tests within containerised web-driver improving reliability and 100% decrease in CI run time.",
+          "note": "Set up new CI pipeline for the surgical guidance application; automated complex integration tests, reducing server costs with 50% improvement in CI run time.",
           "skills": [
             "Github Actions",
             "Bash",
@@ -105,7 +100,7 @@
           ]
         },
         {
-          "note": "Developed a custom test harness to benchmark algorithmic identification of ROIs in CT scans, aiding in optimising the 2D/3D algorithmic registration times during surgery.",
+          "note": "Developed a custom testing tool to benchmark algorithmic identification of ROIs in CT scans, improving customer experience with faster registrations during surgery.",
           "skills": [
             "HTML",
             "TypeScript",
@@ -113,7 +108,7 @@
           ]
         },
         {
-          "note": "Developed a Github-Slackbot to inform when PR merge conflicts arise from upstream changes - helped optimise the software release cycle and ease bottlenecks in the QA queue.",
+          "note": "Developed a Github-Slackbot to inform when PR merge conflicts arise from upstream changes - helped optimize the software release cycle and ease bottlenecks in the QA queue.",
           "skills": [
             "Bash",
             "Github Actions",
@@ -140,7 +135,7 @@
           ]
         },
         {
-          "note": "Rebuilt the entire frontend for the 'ITG', a highly complex, state dependent browser application used by surgeons during operations. A solo project which demonstrates my ability to digest an unfamiliar codebase, identify issues and produce a robust, reactive and extensible application.",
+          "note": "Rebuilt and designed the entire frontend codebase for the surgical guidance app, a complex browser application. Worked to decouple over-engineered spaghetti code. Built a type-safe, readable and extensible codebase.",
           "skills": [
             "React/Svelte",
             "TypeScript",
@@ -227,7 +222,7 @@
           "note": "Mentoring PhD students within a reputable high-pressure science research group."
         },
         {
-          "note": "Planning and overseeing multi-day experiential campaigns, collecting data at international facilities with specialised instrumentation."
+          "note": "Planning and overseeing multi-day experiential campaigns, collecting data at international facilities with specialized instrumentation."
         },
         {
           "note": "Strong writing ability demonstrated through publications as the first author in high-impact journals."
@@ -242,7 +237,7 @@
     {
       "name": "Portfolio site",
       "published": true,
-      "url": "https://edpacca.co.uk",
+      "url": "https://jedward.co.uk",
       "description": "Personal portfolio using modern JavaScript framework to highlight coding projects and other hobbies. Uses SSR and features several fun widgets including a mini 2D physics engine and a library for drawing complex shapes in the HTML canvas.",
       "tech": [
         "Sveltekit",
@@ -266,7 +261,7 @@
     {
       "name": "Browser based D&D Initiative Tracker",
       "published": true,
-      "url": "https://edpacca.github.io/ednd-initiative",
+      "url": "https://jedward.github.io/ednd-initiative",
       "tech": [
         "Svelte",
         "TypeScript"
@@ -277,7 +272,7 @@
     {
       "name": "Free Website with CMS",
       "published": false,
-      "url": "https://amazing-fairy-5e81f2.netlify.app/",
+      "url": "https://jedward.netlify.app/",
       "tech": [
         "Hugo",
         "Netlify CMS"
@@ -288,7 +283,7 @@
     {
       "name": "Spotify CLI",
       "published": true,
-      "url": "https://github.com/edpacca-cydar/spotify-cmd",
+      "url": "https://github.com/jedward/",
       "year": 2022,
       "description": "Bash scripted Command-line Interface leveraging the Spotify Dev API to play and manage songs and playlists.",
       "tech": [
@@ -299,7 +294,7 @@
     {
       "name": "Full-Stack Wedding App",
       "published": true,
-      "url": "https://edpacca.co.uk/wapp",
+      "url": "https://jedward.co.uk/wapp",
       "tech": [
         "React/Redux",
         "Express",
@@ -313,7 +308,7 @@
     {
       "name": "Wizard Grenade 2D Game",
       "published": true,
-      "url": "https://edpacca.co.uk/wizard-grenade",
+      "url": "https://jedward.co.uk/wizard-grenade",
       "tech": [
         "C#",
         "XNA Framework"
@@ -330,42 +325,5 @@
     "Muay-Thai",
     "coffee..."
   ],
-  "publications": [
-    {
-      "title": "Structural phase transitions in yttrium up to 183 GPa",
-      "authors": "E. J. Pace",
-      "doi": "10.1103/PhysRevB.102.094104",
-      "link": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.094104",
-      "date": "Sept 2020",
-      "journal": "Physical Review B",
-      "ref": "Phys. Rev. B 102, 094104"
-    },
-    {
-      "title": "Properties and Phase Diagram of (H2S)2H2",
-      "authors": "E. J. Pace",
-      "doi": "10.1103/PhysRevB.101.174511",
-      "link": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.174511",
-      "date": "May 2020",
-      "journal": "Physical Review B",
-      "ref": "Phys. Rev. B 101, 174511"
-    },
-    {
-      "title": "Intense Reactivity in Sulfur-Hydrogen Mixtures at High Pressure under X-ray Irradiation",
-      "authors": "E. J. Pace",
-      "doi": "10.1021/acs.jpclett.9b03797",
-      "link": "https://pubs.acs.org/doi/10.1021/acs.jpclett.9b03797",
-      "date": "Feb 2020",
-      "journal": "The Journal of Physical Chemistry Letters",
-      "ref": "J. Phys. Chem. Lett. 11, 5, 1828-1834"
-    },
-    {
-      "title": "Synthesis and stability of hydrogen selenide compounds at high pressure",
-      "authors": "E. J. Pace",
-      "doi": "10.1063/1.5004242",
-      "link": "https://pubs.aip.org/aip/jcp/article-abstract/147/18/184303/195414/Synthesis-and-stability-of-hydrogen-selenide",
-      "date": "Nov 2017",
-      "journal": "The Journal of Chemical Physics",
-      "ref": "J. Chem. Phys. 147, 184303"
-    }
-  ]
+  "publications": ""
 }
