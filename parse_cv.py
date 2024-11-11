@@ -8,6 +8,7 @@ import json
 import datetime
 
 valid_words = [
+    "app",
     "frontend",
     "backend",
     "3d",
