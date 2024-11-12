@@ -47,9 +47,11 @@
                     <References references={data.references}/>
                 </section>
             </div>
-            <section>
-                <Publications publications={data.publications} rg_url={data.urls.researchGate}/>
-            </section>
+            {#if data.publications}
+                <section>
+                    <Publications publications={data.publications} rg_url={data.urls.researchGate}/>
+                </section>
+            {/if}
         </div>
     </div>
 </main>

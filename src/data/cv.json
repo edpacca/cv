@@ -1,16 +1,16 @@
 {
-  "version": 3,
-  "date": "2024-10-28",
+  "version": 5,
+  "date": "2024-11-11",
   "profile": {
     "name": "Eddie Pace",
     "job_title": "Full-Stack Software Engineer",
-    "email": "edwardjpace@gmail.com",
+    "email": "",
     "phone": "",
     "address": "",
     "city": "Vancouver, CA",
     "website": "edpacca.co.uk"
   },
-  "summary": "A highly adaptable full-stack developer with a record of delivering professional software and problem solving at every level of the stack. Experienced in maintaining complex codebases and architecting projects from the ground up. Proficient in handling and analysing datasets from physics career.",
+  "summary": "A versatile full-stack developer with a strong record of building impactful software products. Proven ability to translate technical challenges into innovative product solutions across all stages of the development lifecycle.",
   "urls": {
     "github": "https://github.com/edpacca",
     "github2": "https://github.com/edpacca-cydar",
@@ -82,38 +82,37 @@
       "location": "Cambridge UK",
       "icon": "cydar.webp",
       "dates": "June 2023 - Oct 2024",
-      "summary": "Cydar are a medical imaging startup; 3D deformation models of the heart are generated from CT scans, overlaid onto xray video streams and updated in real time to guide surgical operations.",
+      "summary": "Cydar is a medical imaging startup that creates real-time 3D deformation models of the heart from CT scans, overlaying them onto X-ray video streams to guide surgical procedures.",
       "notes": [
         {
-          "note": "Delivered new surgical planning software from concept. Designed and architected frontend codebase, proposed and implemented new coding standards, managed interface layer between python and c++ backend code. Contributed an original algorithm to handle percentage based zoom on 3D model.",
+          "note": "Delivered new surgical planning software with AI-powered analytical tools, facilitating faster clinical decision-making.",
           "skills": [
             "Python",
             "C++"
-          ],
-          "product": "Cydar Maps",
-          "shipped": true
-        },
-        {
-          "note": "Worked alone to set up new CI pipeline for the In Theatre GUI application; automated complex integration tests within containerised web-driver improving reliability and 100% decrease in CI run time.",
-          "skills": [
-            "Github Actions",
-            "Bash",
-            "Docker",
-            "Python",
-            "TypeScript",
-            "Selenium"
           ]
         },
         {
-          "note": "Developed a custom test harness to benchmark algorithmic identification of ROIs in CT scans, aiding in optimising the 2D/3D algorithmic registration times during surgery.",
+          "note": "Managed frontend codebase development, introducing new coding standards to optimize the SDLC and ensure HIPAA compliance."
+        },
+        {
+          "note": "Implemented a new CI pipeline with automated integration tests, cutting server costs and doubling run time efficiency.",
           "skills": [
-            "HTML",
+            "Github Actions",
+            "Docker",
+            "TypeScript",
+            "Selenium",
+            "Python"
+          ]
+        },
+        {
+          "note": "Contributed significantly to the development of a benchmarking tool for algorithmic ROI identification in CT scans, enabling faster real-time updates during live surgeries.",
+          "skills": [
             "TypeScript",
             "Jest"
           ]
         },
         {
-          "note": "Developed a Github-Slackbot to inform when PR merge conflicts arise from upstream changes - helped optimise the software release cycle and ease bottlenecks in the QA queue.",
+          "note": "Streamlined the software release cycle by developing a GitHub-Slackbot tool that notified developers of PR merge conflicts from upstream changes, reducing bottlenecks in the QA queue.",
           "skills": [
             "Bash",
             "Github Actions",
@@ -130,33 +129,30 @@
       "dates": "Aug 2022 - June 2023",
       "notes": [
         {
-          "note": "Time-critical triaging of bugs reported by users. Debugging backend code to identify source of issues, patching live servers where necessary.",
+          "note": "Enhanced backend services with improved image sorting algorithm to ensure correct CT stacking order, fortifying the value of the main user portal as a tool to browse CT scans.",
           "skills": [
             "Python",
             "Django",
-            "Linux",
-            "SSH",
-            "DevOps"
+            "AWS"
           ]
         },
         {
-          "note": "Rebuilt the entire frontend for the 'ITG', a highly complex, state dependent browser application used by surgeons during operations. A solo project which demonstrates my ability to digest an unfamiliar codebase, identify issues and produce a robust, reactive and extensible application.",
+          "note": "Rewrote the legacy codebase for the surgical guidance app using a modern component-based framework, evaluating the existing code, creating an iterative roadmap, and implementing tests to produce a type-safe, extensible codebase. Enabled efficient development of new customer-requested features.",
           "skills": [
             "React/Svelte",
             "TypeScript",
             "Redux",
             "Django",
             "Python"
-          ],
-          "shipped": true,
-          "product": "Guide"
+          ]
         },
         {
-          "note": "Enhanced backend services - Improved DICOM image sorting algorithm to ensure correct stacking order. Deployed test cloud to test interaction with other micro-services.",
+          "note": "Quickly triaged and remotely resolved critical bugs reported by clinical users, minimizing downtime and contributing to a 100% user retention rate.",
           "skills": [
             "Python",
             "Django",
-            "AWS"
+            "Linux",
+            "SSH"
           ]
         }
       ]
@@ -167,10 +163,10 @@
       "location": "Edinburgh UK",
       "icon": "scott-logic.webp",
       "dates": "Feb 2022 - Aug 2022",
-      "summary": "Scott Logic are a highly respected software consultancy. During my time here I gained formal training and worked as part of a large team developing scalable codebases at the enterprise level.",
+      "summary": "Scott Logic is a respected software consultancy, providing formal training and contributing to the development of scalable, enterprise-level codebases within a large team.",
       "notes": [
         {
-          "note": "Worked from POC to production on a Single Sign-On (SSO) application for the Scottish Government. Focused on the backend implementing PKCE authentication flow to meet stringent security requirements.",
+          "note": "Engineered a scalable Single Sign-On (SSO) service for the Scottish Government, implementing PKCE authentication and meeting strict OAuth 2.0 security standards, ensuring GDPR compliance.",
           "skills": [
             "Java",
             "SpringBoot",
@@ -180,14 +176,11 @@
           ]
         },
         {
-          "note": "Delivered CI/CD training to graduates; automated build and deployment of application using infrastructure as code.",
+          "note": "Delivered formal CI/CD training to graduates, enabling them to automate builds and deployments with infrastructure as code, enhancing their value to the company.",
           "skills": [
             "Terraform",
             "AWS"
           ]
-        },
-        {
-          "note": "Presenting demos regularly for different groups of clients, modifying level of presentation to suit audience knowledge."
         }
       ]
     },
@@ -199,7 +192,7 @@
       "dates": "Aug 2021 - Feb 2022",
       "notes": [
         {
-          "note": "Rapidly developed and deployed working prototype with PKCE authentication server for SSO project.",
+          "note": "Developed a proof of concept for the SSO authorization server, evaluating various programming frameworks to identify the most secure and efficient platform for the final product.",
           "skills": [
             "C#",
             "ASP.Net",
@@ -207,7 +200,7 @@
           ]
         },
         {
-          "note": "Learned to value teamwork collaborating with large group of graduates on internal project.",
+          "note": "Fostered teamwork and collaboration while working with a diverse group of graduates on an internal project, improving communication and project outcomes.",
           "skills": [
             "Communication",
             "Java",
@@ -224,16 +217,16 @@
       "dates": "2018 - 2020",
       "notes": [
         {
-          "note": "Mentoring PhD students within a reputable high-pressure science research group."
+          "note": "Mentored PhD students within a reputable high-pressure science research group, supporting their research goals."
         },
         {
-          "note": "Planning and overseeing multi-day experiential campaigns, collecting data at international facilities with specialised instrumentation."
+          "note": "Planned and led multi-day experiential campaigns, collecting data at international facilities with specialized instrumentation."
         },
         {
-          "note": "Strong writing ability demonstrated through publications as the first author in high-impact journals."
+          "note": "First author on research papers published in high-impact journals."
         },
         {
-          "note": "Developed excellent public speaking skills by delivering presentations to large audiences at international conferences."
+          "note": "Honed public speaking skills by delivering presentations to large audiences at international conferences."
         }
       ]
     }
@@ -243,7 +236,7 @@
       "name": "Portfolio site",
       "published": true,
       "url": "https://edpacca.co.uk",
-      "description": "Personal portfolio using modern JavaScript framework to highlight coding projects and other hobbies. Uses SSR and features several fun widgets including a mini 2D physics engine and a library for drawing complex shapes in the HTML canvas.",
+      "description": "Developed a personal portfolio using a modern JavaScript framework to showcase coding projects and personal interests. Implemented Server-Side Rendering (SSR) and integrated interactive features, including a mini 2D physics engine and a library for drawing complex shapes on the HTML canvas.",
       "tech": [
         "Sveltekit",
         "TypeScript",
@@ -261,7 +254,7 @@
         "Typescript",
         "Redux"
       ],
-      "description": "Tasked with rebuilding the entire frontend for real time surgical guidance application; implemnting new UX design using a brand new frontend framework to replace pure JS. Had to fully read and understand the existing application which used Redux to manage complex state dependent transitions, and websockets to send and recieve processed data from cloud based GPUs severs. A key challenge was figuring out how to expose and connect the Redux store to the Svelte store so Svelte components could subscribe to state changes. I architected and structured the entire JS/TS component library and rebuilt the product from the ground up. The result is a highly extensible, readable and testable codebase; the application is a medical device and is used by surgeons during operations to save lives."
+      "description": "Rebuilt the frontend of a real-time surgical guidance application, implementing a new UX design with Svelte to replace a legacy JavaScript solution. Gained a deep understanding of the existing application, which used Redux for state management and WebSockets for communication with cloud-based GPU servers. A key challenge was integrating the Redux store with Svelte to allow components to subscribe to state changes. Rebuilt the product from the ground up, resulting in a highly extensible, maintainable, and testable codebase. The application is now used by surgeons in critical operations to improve patient outcomes."
     },
     {
       "name": "Browser based D&D Initiative Tracker",
@@ -272,7 +265,7 @@
         "TypeScript"
       ],
       "year": 2023,
-      "description": "App designed to help manage running a game of Dungeons & Dragons - part of a full tool-suite that I am actively developing. An entirely static, but feature-rich application with data persistence (via local storage), a visual historical action log and an attractive UI."
+      "description": "Created an app to assist with managing Dungeons & Dragons games, as part of a broader tool suite I'm actively building. The app features a static yet feature-rich design, with data persistence via local storage, a visual action log, and an intuitive, user-friendly interface."
     },
     {
       "name": "Free Website with CMS",
@@ -283,14 +276,14 @@
         "Netlify CMS"
       ],
       "year": 2023,
-      "description": "Helped a small dance company from Uganda save money by building a free website, with content and a timetable that could be easily managed with minimal computer literacy. The website is hosted  on Github Pages and utilizes Netlify for user-authenticated content management."
+      "description": "Built a cost-effective website for a small dance company in Uganda, featuring a simple system for managing content and updating the timetable, designed for users with minimal computer literacy. The site is hosted on GitHub Pages and uses Netlify for user-authenticated content management."
     },
     {
       "name": "Spotify CLI",
       "published": true,
       "url": "https://github.com/edpacca-cydar/spotify-cmd",
       "year": 2022,
-      "description": "Bash scripted Command-line Interface leveraging the Spotify Dev API to play and manage songs and playlists.",
+      "description": "Bash scripted Command-line Interface, leveraging the Spotify Dev API to play and manage songs and playlists.",
       "tech": [
         "Bash",
         "RESTful APIs"
@@ -308,7 +301,7 @@
         "RESTful APIs"
       ],
       "year": 2022,
-      "description": "A MERN stack app created entirely from scratch, launched and deployed as microservices with security in mind, using a reverse proxy to orchestrate traffic. Backend authentication server validates user and authorizes client session via cookies. Enables wedding to guests manage meal choices, report arrival dates, find their seats and access the itinerary. \"Wapp\" effectively aided us in organising and managing our wedding."
+      "description": "Built an app on the MERN stack to manage wedding logistics. Deployed as microservices with a focus on security. A reverse proxy orchestrates traffic, while the backend authentication server validates users and manages sessions via cookies. The app allows guests to manage meal choices, report arrival times, find seating, and access the itinerary \u2013 \"Wapp\" effectively streamlined our wedding organization."
     },
     {
       "name": "Wizard Grenade 2D Game",
@@ -319,7 +312,7 @@
         "XNA Framework"
       ],
       "year": 2020,
-      "description": "First major project undertaken to learn Object-Oriented Programming and implement design patterns. Took time to create a well-crafted and extensible game library from scratch, to build a fully functional local multiplayer from a simple render loop - featuring a custom physics engine, unique artwork and music."
+      "description": "Developed my first major project to learn Object-Oriented Programming and design patterns. Built a fully functional local multiplayer game from scratch, creating an extensible game library with a custom physics engine, featuring original artwork and music."
     }
   ],
   "interests": [

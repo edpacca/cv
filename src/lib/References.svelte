@@ -4,17 +4,17 @@
 
 <h2>References</h2>
 <div class="references-container">
-    {#each references as reference}
-        <div class="reference">
-            <div class="bold">{reference.name}</div>
-            <div>{reference.position}, {reference.company}</div>
-            {#if import.meta.env.DEV}
+    {#if import.meta.env.DEV}
+        {#each references as reference}
+            <div class="reference">
+                <div class="bold">{reference.name}</div>
+                <div>{reference.position}, {reference.company}</div>
                 <div>{reference.email}</div>
-            {:else}
-                <div>contact provided upon request</div>
-            {/if}
-        </div>
-    {/each}
+            </div>
+        {/each}
+    {:else}
+        <div>contact provided upon request</div>
+    {/if}
 </div>
 
 <style>
