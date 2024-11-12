@@ -9,7 +9,17 @@ import datetime
 
 valid_words = [
     "app",
+    "impactful",
+    "lifecycle",
     "frontend",
+    "HIPAA",
+    "roadmap",
+    "triaged",
+    "gdpr",
+    "oauth",
+    "SDLC",
+    "roi",
+    "devs",
     "backend",
     "3d",
     "architected",
