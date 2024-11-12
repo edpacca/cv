@@ -84,14 +84,16 @@ def main():
 
     load_dotenv()
     input_dir = os.getenv("CV_DATA_DIR")
-    input_file = os.getenv("CV_FILE")
-    print(input_file)
+    input_filename = os.getenv("CV_FILE")
+    main_cv_filename = os.getenv("MAIN_CV_FILE")
+    print(input_filename)
     output_dir = "./src/data"
 
-    with open(f"{input_dir}/{input_file}") as input_file:
+    with open(f"{input_dir}/{input_filename}") as input_file:
         data = yaml.safe_load(input_file)
 
-    validate_information(data)
+    if input_filename != main_cv_filename:
+        validate_information(data)
     validate_spelling(data)
 
     with open(f"{output_dir}/cv.json", "w") as output_file:
