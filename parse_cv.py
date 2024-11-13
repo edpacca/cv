@@ -24,6 +24,7 @@ valid_words = [
     "3d",
     "architected",
     "codebase",
+    "dd",
     "containerized",
     "ci",
     "gui",
@@ -92,9 +93,17 @@ def main():
     with open(f"{input_dir}/{input_filename}") as input_file:
         data = yaml.safe_load(input_file)
 
-    if input_filename != main_cv_filename:
-        validate_information(data)
-    validate_spelling(data)
+    try:
+        if input_filename != main_cv_filename:
+            validate_information(data)
+        validate_spelling(data)
+    except AssertionError as error:
+        print(error)
+        response = input("continue anyway?")
+        if response in ["Y", "y"]:
+            pass
+        else:
+            exit(1)
 
     with open(f"{output_dir}/cv.json", "w") as output_file:
         output_file.write(json.dumps(data, indent=2, default=DateEncoder))
