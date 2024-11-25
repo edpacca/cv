@@ -15,7 +15,7 @@
 <main>
     <div class="page">
         <Header profile={data.profile}/>
-        <Portfolio urls={data.urls}/>
+        <!-- <Portfolio urls={data.urls}/> -->
         <About summary={data.summary}/>
         <div class="two-col border-top border-bottom">
             <section>
@@ -23,7 +23,7 @@
             </section>
             <div class="v-line"/>
             <section>
-                <Education education={data.education}/>
+                <!-- <Education education={data.education}/> -->
             </section>
         </div>
         <section>
@@ -44,7 +44,7 @@
                 </section>
                 <div class="v-line"/>
                 <section>
-                    <References references={data.references}/>
+                    <!-- <References references={data.references}/> -->
                 </section>
             </div>
             {#if data.publications}

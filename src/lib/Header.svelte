@@ -12,7 +12,7 @@
     <div class="header-info-container">
       <div>
         <div class="header-title">
-          <h1>{profile.name}</h1>
+          <!-- <h1>{profile.name}</h1> -->
           <h3>&lbrace; {profile.job_title} &rbrace;</h3>
         </div>
       </div>

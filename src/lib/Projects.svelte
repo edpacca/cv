@@ -20,9 +20,9 @@
                 {stringList(project.tech, "|")}
             </span>
             {/if}
-            {#if project.url}
+            <!-- {#if project.url}
                 <a href={project.url}>{project.url}</a>
-            {/if}
+            {/if} -->
 
         </div>
         <div>
