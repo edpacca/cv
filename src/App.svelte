@@ -38,11 +38,11 @@
             <Projects projects={data.projects}/>
         </section>
         <div class="stretch-bottom">
-            <div class="two-col border-top border-bottom print-margin">
+            <div class="print-margin">
                 <section>
                     <Interests interests={data.interests}/>
                 </section>
-                <div class="v-line"/>
+                <!-- <div class="v-line"/> -->
                 <section>
                     <References references={data.references}/>
                 </section>
@@ -78,6 +78,11 @@
 
     section {
         padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    .two-col section {
+        padding-bottom: 1em;
     }
 
     .media-only {

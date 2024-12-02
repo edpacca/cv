@@ -6,9 +6,9 @@
 </script>
 
 <header>
-    <div class="profile-img">
+    <!-- <div class="profile-img">
       <ProfileImg/>
-    </div>
+    </div> -->
     <div class="header-info-container">
       <div>
         <div class="header-title">
@@ -24,9 +24,9 @@
 
 <style>
   header {
-    display: grid;
+    /* display: grid;
     grid-template-columns: var(--profile-img-height) 1fr;
-    gap: 1em;
+    gap: 1em; */
     margin-bottom: 1em;
   }
 

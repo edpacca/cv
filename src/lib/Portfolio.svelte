@@ -14,7 +14,5 @@
         display: flex;
         flex-direction: row;
         gap: 1.5em;
-        justify-content: center;
-        align-items: center;
     }
 </style>

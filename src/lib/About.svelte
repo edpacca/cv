@@ -4,23 +4,20 @@
 </script>
 
 <div class="about">
-    <div class="profile-img">
+    <!-- <div class="profile-img">
         <ProfileImg/>
-    </div>
+    </div> -->
     <p>{summary}</p>
 </div>
 
 <style>
-    .about {
-        padding: 0.5em 2em 1em;
-    }
-
-    .profile-img {
-      display: none;
-    }
+    /* .profile-img {
+        display: none;
+    } */
 
     @media screen and (max-width: 892px) {
         .about {
+            padding: 0.5em 2em 1em;
             display: flex;
             flex-direction: row;
             justify-content: center;

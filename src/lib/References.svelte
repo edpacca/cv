@@ -4,7 +4,7 @@
 
 <h2>References</h2>
 <div class="references-container">
-    {#if import.meta.env.DEV}
+    <!-- {#if import.meta.env.DEV}
         {#each references as reference}
             <div class="reference">
                 <div class="bold">{reference.name}</div>
@@ -12,9 +12,9 @@
                 <div>{reference.email}</div>
             </div>
         {/each}
-    {:else}
-        <div>contact provided upon request</div>
-    {/if}
+    {:else} -->
+    <div>provided upon request</div>
+    <!-- {/if} -->
 </div>
 
 <style>

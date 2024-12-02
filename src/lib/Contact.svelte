@@ -28,9 +28,9 @@
   <div>{profile.city}</div>
 </div>
 <div class="info-line">
-  <CheckmarkFilled size={24} class="icon no-print"/>
-  <CheckmarkFilled size={16} class="print-only"/>
-<div>Eligible to work in CA</div>
+  <!-- <CheckmarkFilled size={24} class="icon no-print"/>
+  <CheckmarkFilled size={16} class="print-only"/> -->
+<!-- <div>Eligible to work in CA</div> -->
 </div>
 
 <style>
